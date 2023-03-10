@@ -1,0 +1,297 @@
+html,
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.heading {
+  background-color: #333333;
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+}
+
+.heading-search-language {
+  margin-right: 398px;
+  display: flex;
+  align-items: center;
+}
+
+.heading__search {
+  margin-right: 12px;
+  line-height: 12px;
+}
+
+.heading__search--input {
+  height: 45px;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;;
+}
+
+input[type="text"] {
+  background-color: #333333;
+}
+
+.icon-search {
+  position: absolute;
+  right: 456px;
+  top: 13px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* ::placeholder {
+    background-color: #333333;
+    height: 45px;
+} */
+
+.heading__language--title {
+  font-style: normal;
+  color: #ffffff;
+  margin-right: 5px;
+  line-height: 12px;
+  font-weight: 700;
+}
+
+.icon__language {
+  color: #ffffff;
+}
+
+/* navigation start */
+.nav-main {
+  background-color: #ffffff;
+  height: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.navigation {
+  margin-left: 30px;
+}
+
+.navigation__menu {
+  display: flex;
+  margin-left: 260px;
+  cursor: pointer;
+}
+
+.navigation__menu--item:hover {
+  color: #CC0000;
+}
+
+.icon-home {
+  margin-left: 30px;
+}
+
+.navigation__menu--item {
+  margin-right: 30px;
+  line-height: 65px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.logo__menu--item {
+  margin-top: 8px; 
+  width: 100%;
+}
+
+/* navigation end */
+
+/* banner start */
+
+.banner {
+  position: relative;
+}
+
+.banner-title {
+  position: absolute;
+  left: 50%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: calc(50%);
+  transform: translate(-50%, -50%);
+}
+
+/* banner end */
+
+/* home menu item start */
+.home-menu {
+  background-color: #f5f5f5;
+  height: 50px;
+}
+
+.home__menu--item {
+  display: flex;
+}
+
+.home__menu--list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50px;
+  color: #666666;
+  margin-left: 10px;
+}
+
+.home__menu--list-more {
+  margin-left: 10px;
+}
+/* home menu item end */
+
+/* container start */
+.header__new {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #333333;
+  margin-left: 50px;
+}
+
+.description__new {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  text-align: center;
+  margin: 30px 50px;
+  overflow-x: hidden;
+}
+
+.content__page--new {
+   margin: auto;
+  margin-top: 40px; 
+  overflow: auto;
+}
+
+.content__page--img {
+   width: 100%;
+}
+
+
+.banner__calendar {
+ margin: 30px 50px;
+}
+
+.title__calendar {
+ position: relative;
+ top: -60px;
+ left: 60px;
+ font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+}
+
+
+.view__more--new {
+  margin-left: 50px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.icon__view--more {
+  color: #cc0000;
+  margin-left: 6px;
+}
+
+/* container end */
+
+/* cart content start */
+/* .cards {
+  margin-top: 40px;
+  overflow-x: hidden;
+ }
+
+.banner__cards {
+  position: relative;
+
+}
+
+.banner_img--cards {
+  position: absolute;
+  top: -36px;
+  left: 0;
+}
+
+.banner__card--title {
+  position: absolute;
+  top: -27px;
+  left: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+ .cards__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px 20px;
+ }
+ 
+ .cards__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+  margin: 10px 20px;
+ }
+
+ .cards__content {
+  background: #F5F5F5;
+ }
+
+ .cards__views {
+  padding: 20px 20px;
+ } */
+ 
+
+ /* cart content end */
+
+
+/* pagination start */
+.pagination {
+   text-align: center;
+   margin-top: 30px;
+}
+
+/* pagination end */
+
+/* footer start */
+.footer {
+  padding: 0px 20px;
+}
+/* footer end */
+
+ .footer__text {
+  margin-top: 30px;
+}
+
+.footer__text-cp {
+  margin: 30px 80px;
+} 
+
+
+

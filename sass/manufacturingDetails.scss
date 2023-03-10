@@ -1,0 +1,214 @@
+@import "../sass/variable";
+@import "../sass/reset";
+
+.heading {
+  background: #333333;
+  height: 45px;
+  max-height: 45px;
+  width: 100%;
+  position: relative;
+}
+
+.heading__search--input {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 45px;
+  max-height: 45px;
+  border-left: 1px solid $colorTitle;
+  border-right: 1px solid $colorTitle;
+}
+
+.icon-search {
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  left: 63%;
+}
+
+.heading__language--title {
+  position: absolute;
+  top: 30%;
+  left: 66%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  background-color: $colorText;
+}
+
+.icon-home {
+  margin-left: 30px;
+}
+
+.logo__menu--item {
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* home menu item start */
+.home-menu {
+  background-color: $backgroundColor;
+}
+
+.home__menu--item {
+   display: flex;
+}
+
+.home__menu--list {
+  font-weight: $fontWeight400;
+  font-size: $fontSize14;
+  line-height: 50px;
+  color: #666666;
+  margin-left: 10px;
+}
+
+.home__menu--list-more {
+   margin-left: 10px;
+}
+/* home menu item end */
+//   manufacturing details start
+
+.manufacturing__details {
+  padding: 10px 0px;
+  &--header {
+    font-weight: $fontWeight700;
+    font-size: $fontSize40;
+    line-height: 48px;
+    color: $colorText;
+    padding: 10px 20px;
+  }
+  &--item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 10px 20px;
+  }
+  &--item li {
+    margin-bottom: 20px;
+  }
+  &--desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+    padding: 10px 14px;
+  }
+  &--title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #e41623;
+  }
+
+  &--circle {
+    list-style-type: circle;
+    padding: 20px 20px;
+  }
+}
+
+.space-hightlight {
+  font-weight: 900;
+  background: $colorTextFocus;
+  font-size: 8px;
+  line-height: 8px;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+}
+
+.category__product--space {
+  font-weight: 900;
+  font-size: 8px;
+  line-height: 8px;
+  background: #d1d1d1;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+}
+
+.button__service--pdf {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+}
+
+//manufacturing details end
+
+//manufacturing card start
+
+.header__related--manufacturing {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #e41623;
+  padding-top: 50px;
+}
+
+.manufacturing__card {
+  margin-top: 10px;
+  height: 100%;
+  background: $colorTitle;
+  &--name {
+    font-weight: $fontWeight700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $colorText;
+    margin-bottom: 15px;
+  }
+  &--content {
+    font-weight: $fontWeight400;
+    font-size: $fontSize14;
+    line-height: 17px;
+    color: #666666;
+    margin-bottom: 15px;
+  }
+}
+
+.manufacturing__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.manufacturing__background {
+  background: $colorTitle;
+  padding: 20px 20px;
+}
+
+.view__more--new {
+  font-weight: $fontWeight700;
+  font-size: $fontSize14;
+  line-height: 17px;
+  color: $colorText;
+}
+
+.view__more--new i {
+  color: $colorTextFocus;
+  font-size: 18px;
+  margin-left: 7px;
+}
+
+//manufacturing card end
+
+.footer {
+  padding: 0px 20px;
+}
+
+.fmore {
+  line-height: 55px;
+  font-size: 14px;
+}

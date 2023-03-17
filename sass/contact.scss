@@ -3,39 +3,13 @@
 
 .heading {
   background: #333333;
-  height: 45px;
-  max-height: 45px;
-  width: 100%;
-  position: relative;
 }
 
 .heading__search--input {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  height: 45px;
-  max-height: 45px;
+  height: 46px;
   border-left: 1px solid $colorTitle;
   border-right: 1px solid $colorTitle;
-}
-
-.icon-search {
-  font-size: 20px;
-  line-height: 20px;
-  color: #FFFFFF;
-  position: absolute;
-  top: 20%;
-  left: 63%;
-}
-
-.heading__language--title {
-  position: absolute;
-  top: 30%;
-  left: 66%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #FFFFFF;
+  border: none;
 }
 
 input[type="text"] {
@@ -46,35 +20,15 @@ input[type="text"] {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.icon-home {
-  margin-left: 30px;
-}
-
-.logo__menu--item {
-  margin-top: 8px;
-  width: 100%;
-}
-
-.icon-home {
-  margin-left: 30px;
-}
-
-.logo__menu--item {
-  margin-top: 8px;
-  width: 100%;
-}
-
 /* navigation end */
 
 /* home menu item start */
 .home-menu {
   background-color: $backgroundColor;
-  height: 50px;
 }
 
 .home__menu--item {
   display: flex;
-  margin-left: 140px;
 }
 
 .home__menu--list {
@@ -85,9 +39,6 @@ input[type="text"] {
   margin-left: 10px;
 }
 
-.home__menu--list-more {
-  margin-left: 10px;
-}
 /* home menu item end */
 // contact start
 
@@ -131,20 +82,6 @@ input[type="text"] {
   &__title {
     color: #e41623;
   }
-  &__input {
-    position: relative;
-  }
-
-  &__label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #333333;
-    z-index: 10000;
-  }
 }
 
 .more-background {
@@ -157,11 +94,6 @@ input[type="text"] {
 }
 
 .contact__btn--view {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #ffffff;
   background: #e41623;
   border-radius: 10px;
   padding: 10px 50px;
@@ -169,10 +101,6 @@ input[type="text"] {
 }
 
 // contact end
-
-.footer {
-  padding: 0px 20px;
-}
 
 .fmore {
   line-height: 55px;

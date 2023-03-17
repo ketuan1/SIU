@@ -24,39 +24,13 @@ img {
 
 .heading {
   background: #333333;
-  height: 45px;
-  max-height: 45px;
-  width: 100%;
-  position: relative;
 }
 
 .heading__search--input {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  height: 45px;
-  max-height: 45px;
+  height: 46px;
   border-left: 1px solid #FFFFFF;
   border-right: 1px solid #FFFFFF;
-}
-
-.icon-search {
-  font-size: 20px;
-  line-height: 20px;
-  color: #FFFFFF;
-  position: absolute;
-  top: 20%;
-  left: 63%;
-}
-
-.heading__language--title {
-  position: absolute;
-  top: 30%;
-  left: 66%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #FFFFFF;
+  border: none;
 }
 
 input[type=text] {
@@ -67,26 +41,11 @@ input[type=text] {
   margin-left: 30px;
 }
 
-.logo__menu--item {
-  margin-top: 8px;
-  width: 100%;
-}
-
 /* navigation end */
 /* banner start */
-.banner {
-  position: relative;
-}
-
 .banner-title {
   position: absolute;
   left: 50%;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 73px;
-  text-align: center;
-  text-transform: uppercase;
   color: #FFFFFF;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -96,12 +55,6 @@ input[type=text] {
 /* home menu item start */
 .home-menu {
   background-color: #F5F5F5;
-  height: 50px;
-}
-
-.home__menu--item {
-  display: flex;
-  margin-left: 140px;
 }
 
 .home__menu--list {
@@ -109,11 +62,6 @@ input[type=text] {
   font-size: 14px;
   line-height: 50px;
   color: #666666;
-  margin-left: 10px;
-}
-
-.home__menu--list-more {
-  margin-left: 10px;
 }
 
 /* home menu item end */
@@ -121,18 +69,14 @@ input[type=text] {
   padding: 20px 45px;
 }
 .about__header {
-  font-weight: 700;
   font-size: 40px;
   line-height: 48px;
   color: #E41623;
-  margin-bottom: 20px;
 }
 .about__description {
-  font-weight: 400;
   font-size: 18px;
   line-height: 26px;
   color: #333333;
-  margin-bottom: 20px;
 }
 .about__title {
   font-weight: 700;
@@ -157,10 +101,6 @@ input[type=text] {
 }
 .about__img {
   padding: 20px 45px;
-}
-
-.footer {
-  padding: 0px 20px;
 }
 
 .fmore {

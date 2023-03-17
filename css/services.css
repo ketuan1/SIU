@@ -1,5 +1,26 @@
-@import "../sass/variable";
-@import "../sass/reset";
+html,
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
 
 .heading {
   background: #333333;
@@ -7,15 +28,14 @@
 
 .heading__search--input {
   height: 46px;
-  border-left: 1px solid $colorTitle;
-  border-right: 1px solid $colorTitle;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
   border: none;
 }
 
-input[type="text"] {
-  background-color: $colorText;
+input[type=text] {
+  background-color: #333333;
 }
-
 
 .icon-home {
   margin-left: 30px;
@@ -27,31 +47,29 @@ input[type="text"] {
 }
 
 /* navigation end */
-
 /* home menu item start */
 .home-menu {
-  background-color: $backgroundColor;
+  background-color: #F5F5F5;
 }
 
 .home__menu--item {
-   display: flex;
+  display: flex;
 }
 
 .home__menu--list {
-  font-weight: $fontWeight400;
-  font-size: $fontSize14;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 50px;
   color: #666666;
   margin-left: 10px;
 }
 
 .home__menu--list-more {
-   margin-left: 10px;
+  margin-left: 10px;
 }
+
 /* home menu item end */
-
 /* banner start */
-
 .banner {
   position: relative;
 }
@@ -66,14 +84,11 @@ input[type="text"] {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  top: calc(50%);
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
 /* banner end */
-
-// service related start
-
 .services-content {
   background: #333333;
   height: 100%;
@@ -105,23 +120,20 @@ input[type="text"] {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: $colorTextFocus;
+  color: #E41623;
   border: 1px solid #e41623;
   border-radius: 10px;
   padding: 10px 40px;
-
-  &:hover {
-    color: #e41623;
-    background: #FFFFFF;
-    border: 1px solid #e41623;
-  }
+}
+.button__service--view:hover {
+  color: #e41623;
+  background: #FFFFFF;
+  border: 1px solid #e41623;
 }
 
-//service related end
-
 .pagination {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .footer {
@@ -132,3 +144,5 @@ input[type="text"] {
   line-height: 55px;
   font-size: 14px;
 }
+
+/*# sourceMappingURL=services.css.map */

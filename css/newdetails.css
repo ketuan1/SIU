@@ -24,63 +24,17 @@ img {
 
 .heading {
   background: #333333;
-  height: 45px;
-  max-height: 45px;
-  width: 100%;
-  position: relative;
 }
 
 .heading__search--input {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  height: 45px;
-  max-height: 45px;
+  height: 46px;
   border-left: 1px solid #FFFFFF;
   border-right: 1px solid #FFFFFF;
-}
-
-.icon-search {
-  font-size: 20px;
-  line-height: 20px;
-  color: #ffffff;
-  position: absolute;
-  top: 20%;
-  left: 63%;
-}
-
-.heading__language--title {
-  position: absolute;
-  top: 30%;
-  left: 66%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
+  border: none;
 }
 
 input[type=text] {
   background-color: #333333;
-}
-
-.icon-search {
-  position: absolute;
-  right: 456px;
-  top: 13px;
-  color: #FFFFFF;
-  font-size: 20px;
-}
-.icon-search__language {
-  color: #FFFFFF;
-}
-
-.icon-home {
-  margin-left: 30px;
-}
-
-.logo__menu--item {
-  margin-top: 8px;
-  width: 100%;
 }
 
 /* home menu item start */
@@ -88,23 +42,14 @@ input[type=text] {
   background-color: #F5F5F5;
 }
 
-.home__menu--item {
-  display: flex;
-}
-
 .home__menu--list {
   font-weight: 400;
   font-size: 14px;
   line-height: 50px;
   color: #666666;
-  margin-left: 10px;
+  margin-left: 17px;
 }
 
-.home__menu--list-more {
-  margin-left: 10px;
-}
-
-/* home menu item end */
 /* home menu item end */
 /* content new details start */
 .calender {
@@ -113,21 +58,8 @@ input[type=text] {
   left: 25px;
 }
 
-.banner__calendar {
-  position: absolute;
-}
-
 .title__calendar {
-  position: absolute;
   color: #FFFFFF;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  margin-left: 10px;
-}
-
-.header__new--main {
-  padding: 0px 20px;
 }
 
 .border__new {
@@ -175,10 +107,6 @@ input[type=text] {
   color: #333333;
 }
 
-.content__new-details--last {
-  margin-bottom: 20px;
-}
-
 /* content new details ebd */
 /* category start */
 .category__new--details {
@@ -201,24 +129,14 @@ input[type=text] {
 }
 
 .category__title {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 22px;
   color: #E41623;
-  padding: 10px 2px;
 }
 
 .border__new--category {
   border-top: 1px solid #d1d1d1;
-  margin-bottom: 15px;
-  margin-top: 20px;
 }
 
 /* category end */
-.footer {
-  padding: 0px 20px;
-}
-
 .fmore {
   line-height: 55px;
   font-size: 14px;

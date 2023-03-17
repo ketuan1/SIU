@@ -37,24 +37,53 @@ input[type=text] {
   background-color: #333333;
 }
 
-.box-nav {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-}
-
 .nav-border {
   border-left: 1px solid #d1d1d1;
 }
 
-.space-hightlight {
-  font-weight: 900;
-  background: #E41623;
-  font-size: 8px;
-  line-height: 8px;
-  width: 8px;
-  height: 8px;
-  margin-right: 5px;
+.home-menu {
+  background-color: #f5f5f5;
+  height: 50px;
 }
 
+.home__menu--list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50px;
+  color: #666666;
+}
+
+/* home menu item end */
+/* navigation start */
+.nav-main {
+  background-color: #ffffff;
+  height: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* navigation end */
+/* banner start */
+.banner-title {
+  position: absolute;
+  left: 50%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* banner end */
+.category__product--menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
 .category__product--space {
   font-weight: 900;
   font-size: 8px;
@@ -65,17 +94,43 @@ input[type=text] {
   margin-right: 5px;
 }
 
-.category__product--header {
-  font-weight: 700;
+.space-hightlight {
+  background: #e41623;
+}
+
+.title__sort {
+  font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: #e41623;
-  margin-bottom: 10px;
+  line-height: 55px;
+  color: #999999;
+  margin-right: 10px;
+}
+
+.name__sort {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 55px;
+  color: #333333;
+  margin-left: 10px;
+}
+
+.sort__border {
+  border: 1px solid #eeeeee;
+  width: 240px;
+  height: 50px;
+  background: #ffffff;
+}
+
+.sort__icon {
+  position: absolute;
+  bottom: 0;
+  left: 90%;
+  line-height: 55px;
 }
 
 .products__border {
   border: 1px solid #eeeeee;
+  height: auto;
 }
 .products__content {
   background: #FFFFFF;
@@ -108,6 +163,13 @@ input[type=text] {
   border-radius: 5px;
   padding: 8px 10px;
 }
+.products__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #e41623;
+}
 .products__header {
   font-weight: 700;
   font-size: 16px;
@@ -130,9 +192,9 @@ input[type=text] {
   padding: 15px 30px;
 }
 .products__btn--view:hover {
-  background: #ffffff;
+  color: #e41623;
+  background-color: #ffffff;
   border: 1px solid #e41623;
-  color: #cc0000;
 }
 
 .footer {
@@ -144,4 +206,4 @@ input[type=text] {
   font-size: 14px;
 }
 
-/*# sourceMappingURL=productMegamenu.css.map */
+/*# sourceMappingURL=products.css.map */

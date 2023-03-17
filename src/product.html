@@ -10,18 +10,27 @@
     <title>Product</title>
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../dist/output.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 </head>
 
 <body>
-    <div class="heading">
-        <input class="heading__search--input" type="text" placeholder="Search...">
-        <i class="fa-solid fa-magnifying-glass icon-search"></i>
-        <span class="heading__language--title">EN
-          <i class="fa-solid fa-caret-down icon__language"></i>
-        </span>
+    <div class="heading h-12 m-h-12">
+        <div class="container">
+          <div class="flex justify-end">
+            <form action="" class="border">
+              <input class="heading__search--input text-white" type="text" placeholder="Search...">
+            <button>  <i class="fa-solid fa-magnifying-glass text-xl leading-5 text-white mr-2"></i></button>
+            </form>
+            <div class="text-white mt-auto mb-auto ml-2">
+              <span class="font-bold text-sm leading-4 text-white">EN
+                <i class="fa-solid fa-caret-down text-xs leading-3 text-gray-200"></i>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- menu item start -->
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 container mx-auto">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="./home.html" class="flex items-center">
@@ -31,8 +40,7 @@
                 class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="">
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="">
                     <path fill-rule="evenodd"
                         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                         clip-rule="evenodd"></path>
@@ -45,16 +53,417 @@
                         <a href="/"
                             class="block py-2 pl-3 pr-4  text-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 dark:text-white"
                             aria-current="page">
-                            <i class="fa-solid fa-house icon-home"></i>
+                            <i class="fa-solid fa-house ml-7"></i>
                         </a>
                     </li>
                     <li>
                         <a href="./about.html"
-                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT US</a>
+                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT
+                            US</a>
                     </li>
+
+                    <!-- menu list products start -->
                     <li>
-                        <a href="./product.html"
-                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PRODUCTS</a>
+                        <a href="./product.html" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                           PRODUCTS
+                        </a>
+                            <!-- Dropdown menu -->
+                           
+                            <!-- product megamenu category start -->
+                            <div id="dropdownHover" class="z-10 hidden divide-y divide-gray-100 rounded-lg bg-white shadow w-full">
+                                    <div class="container mx-auto">
+                                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-5 grid-flow-row-dense mt-5 box-nav">
+                                    <div class="col-span-3 cursor-pointer">
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600">Gasket</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5">
+                                            <li class="text-red-700">
+                                                <button class="space-hightlight"></button>
+                                               <a href="./productDetails.html"> Spiral Wound Gasket</a>
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Seat Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Sello Seal Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Isolated Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Heat Exchanger Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Low Stress Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Cage Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Body Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Carbon Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Die-Formed Ring
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Ring Type Joint Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Graphite gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Camprofile Gasket
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                PTFE Gasket
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600">CHEMICALS</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Degreaser
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Contact Cleaner
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Rust Remover
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Water Treatment
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600">BLASTING MACHINE</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Feed Unit
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Recycle Unit
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Nozzles
+                                            </li>
+                                        </ul>
+                                    
+                                    </div>
+                                    
+                                    <div class="col-span-3 cursor-pointer nav-border">
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">packing</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Die-Formed Packing
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Balance Seal
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                PTFE Packing
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Carbon Packing
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Packing Tools
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Pressure Seal
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Slurry Packing
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">LUBRICANTS</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Grease
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Oil
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Dispenser
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Anti-seizer Compound
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Wire Rope Lubricants
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Food Grade Lubricants
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">RAW MATERIALS</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Stainless Steel
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                PTFE
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                PEEK
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Carbon Graphite
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">MRO PRODUCTS</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Special Lubricants
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Special Cleaner
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-span-3 cursor-pointer nav-border">
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">O RING</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Viton ORings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                EPPM ORings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                ORings Kit
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                PTFE ORings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Encapsulated ORings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                D-Rings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                V-Rings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                C-Rings
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">FITTINGS</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Tube
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Elbow
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Union
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Hoses
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Couplings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Hydraulic Hose
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Hydraulic Coupling
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">SHIMS</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Stainless Shim
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Brass Shim
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Plastic Shim
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Precut Shim
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">TOOLS</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Power Tools
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-span-3 cursor-pointer nav-border">
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">HYDRAULIC SEALS</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Piston Seal
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                O Rings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Wiper Seal
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Non-contact Seal
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Bushing
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Rod Seal
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Rotary Seal
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                V-Rings
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Bearing Bands
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Spring Seal
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Backup Seal
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">INJECTION NOZZLES</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                For Cars
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                For Engine
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                For Marine
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">VALVES</h2>
+                                        <ul class="font-normal text-sm leading-7 text-black mb-5 ml-5">
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Control Valve
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Ball Valve
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Gate Valve
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Global Valve
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Butterfly Valve
+                                            </li>
+                                            <li class="hover:text-red-600">
+                                                <button class="category__product--space"></button>
+                                                Sampling Valve
+                                            </li>
+                                        </ul>
+
+                                        <h2 class="font-bold text-lg leading-5 uppercase text-red-600 ml-5">BRISTLE BLASTER TOOLS</h2>
+                                    </div>
+                                </div>
+                                </div>                          
+                                <!-- menu list products end -->
                     </li>
                     <li>
                         <a href="./services.html"
@@ -70,12 +479,14 @@
                     </li>
                     <li>
                         <a href="./contact.html"
-                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT US</a>
+                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT
+                            US</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- menu item end -->
 
     <div class="banner">
         <img class="w-full" src="../images/Rectangle 911.png" alt="">
@@ -84,11 +495,12 @@
 
     <div class="home-menu">
         <div class="container mx-auto">
-            <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-2 grid-flow-row-dense">
+            <div
+                class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-2 grid-flow-row-dense">
                 <div class="col-span-12">
-                    <ul class="home__menu--item">
+                    <ul class="flex">
                         <li class="home__menu--list">
-                            <i class="fa-solid fa-house"></i> <span class="home__menu--list-more">></span>
+                            <i class="fa-solid fa-house"></i> <span class="ml-2">></span>
                         </li>
                         <li class="home__menu--list">Product > Gasket</li>
                     </ul>
@@ -169,56 +581,109 @@
             </div>
         </div>
 
-          <!-- category product end -->
+        <!-- category product end -->
 
         <!-- sort category -->
         <div class="flex mt-20">
             <h4 class="title__sort">Sort by</h4>
-            <div class="sort__border">
-                <p class="name__sort">New
-                    <i class="fa-solid fa-sort-down sort__icon"></i>
-                </p>
+
+            <button id="multiLevelDropdownButton" data-dropdown-toggle="dropdown"
+                class="sort__border text-base font-medium px-4 py-2.5 text-center inline-flex items-center"
+                type="button">New<svg class="w-4 h-4 ml-32" aria-hidden="true" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdown"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="multiLevelDropdownButton">
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spiral
+                            Wound Gasket</a>
+                    </li>
+                    <li>
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                            data-dropdown-placement="right-start" type="button"
+                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Gasket<svg
+                                aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg></button>
+                        <div id="doubleDropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="doubleDropdownButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Seal
+                                        Gasket</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Seal
+                                        Gasket</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Billing</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Rewards</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    </li>
+                </ul>
             </div>
         </div>
+        <!-- sort category end -->
 
         <!-- list products start -->
 
         <div class="products">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 grid-flow-row-dense mt-10">
                 <div class="col-span-1 products__border">
-                    <div class="products__content">
+                    <div class="products__content flex flex-col">
                         <div class="products__new">
                             <span class="products__new--title">NEW</span>
                         </div>
-                        <div class="products__img">
-                            <img class="products__img--content" src="../images/Rectangle 3.png" alt="">
+                        <div class="products__img relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+                            <img class="products__img--content max-w-xs transition duration-300 ease-in-out hover:scale-110" src="../images/Rectangle 3.png" alt="">
                         </div>
                         <p class="products__title">Lubricants</p>
                         <h2 class="products__header">WIRE ROPE 455 ARAMID FIBER GASKET</h2>
-                        <div class="products__btn">
+                        <div class="products__btn mx-auto">
                             <button class="products__btn--view">VIEW MORE</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-span-1 products__border">
-                    <div class="products__content">
+                    <div class="products__content flex flex-col">
                         <div class="products__new">
                             <span class="products__new--title">NEW</span>
                         </div>
-                        <div class="products__img">
-                            <img class="products__img--content" src="../images/Rectangle 4.png" alt="">
+                        <div class="products__img relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+                            <img class="products__img--content  max-w-xs transition duration-300 ease-in-out hover:scale-110" src="../images/Rectangle 4.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">O Ring</p>
                             <h2 class="products__header">D-RINGS</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-span-1 products__border">
-                    <div class="products__content">
+                    <div class="products__content flex flex-col">
                         <div class="products__new">
                             <span class="products__new--title">NEW</span>
                         </div>
@@ -227,20 +692,20 @@
                         </div>
                         <p class="products__title">Chemicals</p>
                         <h2 class="products__header">CHESTERTON 273 ELECTRIC MOTOR CLEANER</h2>
-                        <div class="products__btn">
+                        <div class="products__btn mx-auto">
                             <button class="products__btn--view">VIEW MORE</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 32.2.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -248,14 +713,14 @@
                 </div>
 
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 32.3.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -263,14 +728,14 @@
                 </div>
 
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 32.4.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -278,14 +743,14 @@
                 </div>
 
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 3.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -293,14 +758,14 @@
                 </div>
 
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 6.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -308,14 +773,14 @@
                 </div>
 
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 32.6.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -323,14 +788,14 @@
                 </div>
 
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 32.7.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -338,14 +803,14 @@
                 </div>
 
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 32.8.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -353,14 +818,14 @@
                 </div>
 
                 <div class="col-span-1 products__border">
-                    <div class="products__content">                       
+                    <div class="products__content flex flex-col">
                         <div class="products__img">
                             <img class="products__img--content" src="../images/Rectangle 32.9.png" alt="">
                         </div>
                         <div class="products__name">
                             <p class="products__title">Blasting Machine</p>
                             <h2 class="products__header">FEED UNIT 170 HP</h2>
-                            <div class="products__btn">
+                            <div class="products__btn mx-auto">
                                 <button class="products__btn--view">VIEW MORE</button>
                             </div>
                         </div>
@@ -371,20 +836,21 @@
 
         <!-- list products end -->
 
-          <!-- pagination start -->
-<div class="pagination">
-    <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal text-white bg-red-700 border">
-        1
-      </a>
-      <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal bg-white border">
-        2
-      </a>
-      <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal bg-white border">
-        3
-      </a>
-</div>
+        <!-- pagination start -->
+        <div class="text-center mt-7">
+            <a href="#"
+                class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal text-white bg-red-700 border">
+                1
+            </a>
+            <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal bg-white border">
+                2
+            </a>
+            <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal bg-white border">
+                3
+            </a>
+        </div>
 
-    <!-- pagination end -->
+        <!-- pagination end -->
     </div>
     <footer class="bg-black dark:bg-gray-900 mt-20">
         <div class="grid grid-cols-2 gap-2 px-6 py-8 md:grid-cols-4 container mx-auto">
@@ -393,15 +859,16 @@
                 <ul class="font-normal text-base leading-6 text-white">
                     <li class="mb-4">
                         <i class="fa-solid fa-location-dot font-light text-base leading-4 text-center text-white"></i>
-                        <a href="#">611 Ta Quang Buu St. Dist.8, Ho Chi Minh City , Viet Nam</a>
+                        <a href="#">611 Ta Quang Buu St. Dist.8, Ho Chi Minh City, Viet Nam</a>
                     </li>
                     <li class="mb-4">
-                        <i class="fa-brands fa-firefox-browser font-light text-base leading-4 text-center text-white"></i>
+                        <i
+                            class="fa-brands fa-firefox-browser font-light text-base leading-4 text-center text-white"></i>
                         <a href="#"> www.siuindustry.com</a>
                     </li>
                     <li class="mb-4">
                         <i class="fa-solid fa-envelope font-light text-base leading-4 text-center text-white"></i>
-                        <a href="#">  sales@siuindustry.com</a>
+                        <a href="#"> sales@siuindustry.com</a>
                     </li>
                     <li class="mb-4">
                         <i class="fa-solid fa-phone font-light text-base leading-4 text-center text-white"></i>
@@ -424,7 +891,7 @@
                 <h2 class="mb-6 font-bold text-2xl leading-7 text-white">PRODUCTS</h2>
                 <ul class="font-normal text-base leading-6 text-white list-disc footer">
                     <li class="mb-4">
-                        <a href="#">    Gasket</a>
+                        <a href="#"> Gasket</a>
                     </li>
                     <li class="mb-4">
                         <a href="#">Packing</a>
@@ -443,7 +910,7 @@
                     </li>
                     <li class="mb-4">
                         <a href="#">Fittings</a>
-                    </li>         
+                    </li>
                 </ul>
             </div>
             <div>
@@ -494,21 +961,22 @@
         </div>
     </footer>
 
-       <!-- footer more  start-->
-<div class="bg-red-600 h-full">
-    <div class="container mx-auto">
-      <div class="grid grid:cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 grid-flow-row-dense">
-        <div class="col-span-1">
-          <h3 class="font-normal text-white fmore">© 2022 SIU Industry. All Rights Reserved.</h3>
+    <!-- footer more  start-->
+    <div class="bg-red-600 h-full">
+        <div class="container mx-auto">
+            <div class="grid grid:cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 grid-flow-row-dense">
+                <div class="col-span-1">
+                    <h3 class="font-normal text-white fmore">© 2022 SIU Industry. All Rights Reserved.</h3>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="font-normal text-white fmore">Terms and Conditions . Privacy Policy . Sitemap</h3>
+                </div>
+            </div>
         </div>
-        <div class="col-span-1">
-          <h3 class="font-normal text-white fmore">Terms and Conditions  .  Privacy Policy  .  Sitemap</h3>
-        </div>
-      </div>
-    </div>
     </div>
     <!-- footer more  end-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 </body>
+
 </html>

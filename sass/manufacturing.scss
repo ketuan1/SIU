@@ -3,89 +3,22 @@
 
 .heading {
   background: #333333;
-  height: 45px;
-  max-height: 45px;
-  width: 100%;
-  position: relative;
 }
 
 .heading__search--input {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  height: 45px;
-  max-height: 45px;
+  height: 46px;
   border-left: 1px solid $colorTitle;
   border-right: 1px solid $colorTitle;
-}
-
-.icon-search {
-  font-size: 20px;
-  line-height: 20px;
-  color: #ffffff;
-  position: absolute;
-  top: 20%;
-  left: 63%;
-}
-
-.heading__language--title {
-  position: absolute;
-  top: 30%;
-  left: 66%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
+  border: none;
 }
 
 input[type="text"] {
   background-color: $colorText;
 }
 
-/* navigation start */
-.nav-main {
-  background-color: $colorTitle;
-  height: 70px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navigation {
-  margin-left: 30px;
-
-  &__menu {
-    display: flex;
-    margin-left: 260px;
-    cursor: pointer;
-    &--item:hover {
-      color: $colorTextFocus;
-    }
-    &--item {
-      margin-right: 30px;
-      line-height: 65px;
-      font-style: normal;
-      font-weight: $fontWeight700;
-    }
-  }
-}
-
-.icon-home {
-  margin-left: 30px;
-}
-
-.logo__menu--item {
-  margin-top: 8px;
-  width: 100%;
-}
-
-/* navigation end */
-
 /* home menu item start */
 .home-menu {
   background-color: $backgroundColor;
-}
-
-.home__menu--item {
-   display: flex;
 }
 
 .home__menu--list {
@@ -96,32 +29,21 @@ input[type="text"] {
   margin-left: 10px;
 }
 
-.home__menu--list-more {
-   margin-left: 10px;
-}
 /* home menu item end */
-  
 
 // manufacturing start
 
 .manufacturing-content {
-  padding: 0px 85px;
+  padding: 0px 20px;
 }
 
 .manufacturing-header {
-  font-weight: $fontWeight700;
   font-size: 40px;
   line-height: 48px;
-  text-align: center;
   color: $colorTextFocus;
-  margin-right: 190px;
-  margin-bottom: 20px;
 }
 
 .manufacturing-description {
-  font-weight: $fontWeight400;
-  font-size: 18px;
-  line-height: 26px;
   color: $colorText;
 }
 
@@ -129,70 +51,26 @@ input[type="text"] {
 
 //manufacturing card start
 
-.manufacturing__card {
-  margin-top: 40px;
-  height: 100%;
-  background: $colorTitle;
-  &--name {
-    font-weight: $fontWeight700;
-    font-size: 18px;
-    line-height: 22px;
-    color: $colorText;
-    margin-bottom: 15px;
-  }
-  &--content {
-    font-weight: $fontWeight400;
-    font-size: $fontSize14;
-    line-height: 17px;
-    color: #666666;
-    margin-bottom: 15px;
-  }
+.manufacturing__card--name {
+  color: $colorText;
 }
-
-.manufacturing__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.manufacturing__background {
-  background: $colorTitle;
-  padding: 20px 20px;
+.manufacturing__card--content {
+  color: #666666;
 }
 
 .view__more--new {
-  font-weight: $fontWeight700;
-  font-size: $fontSize14;
-  line-height: 17px;
   color: $colorText;
 }
 
 .view__more--new i {
   color: $colorTextFocus;
-  font-size: 18px;
-  margin-left: 7px;
-}
-
-.manufacturing__button {
-  text-align: center;
 }
 
 .view__button {
-  margin-top: 70px;
   border: 1px solid #000000;
   border-radius: 10px;
   padding: 10px 25px;
-  font-weight: $fontWeight700;
-  font-size: $fontSize14;
-  line-height: 17px;
-  text-align: center;
   color: #000000;
-  margin-bottom: 50px;
-}
-
-.view__button i {
-  margin-left: 5px;
-  line-height: 17px;
 }
 
 //manufacturing card end
@@ -200,17 +78,6 @@ input[type="text"] {
 // footer start
 
 /* footer end */
-
-.footer__text {
-  margin-top: 30px;
-  &-cp {
-    margin: 30px 80px;
-  }
-}
-
-.footer {
-  padding: 0px 20px;
-}
 
 .fmore {
   line-height: 55px;

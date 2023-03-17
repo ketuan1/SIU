@@ -10,19 +10,27 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/36132d75ba.js" crossorigin="anonymous"></script>
     <title>Services</title>
-    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="../dist/output.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="heading">
-        <input class="heading__search--input" type="text" placeholder="Search...">
-        <i class="fa-solid fa-magnifying-glass icon-search"></i>
-        <span class="heading__language--title">EN
-            <i class="fa-solid fa-caret-down icon__language"></i>
-        </span>
-    </div>
+    <div class="heading h-12 m-h-12">
+        <div class="container">
+          <div class="flex justify-end">
+            <form action="" class="border">
+              <input class="heading__search--input text-white" type="text" placeholder="Search...">
+            <button>  <i class="fa-solid fa-magnifying-glass text-xl leading-5 text-white mr-2"></i></button>
+            </form>
+            <div class="text-white mt-auto mb-auto ml-2">
+              <span class="font-bold text-sm leading-4 text-white">EN
+                <i class="fa-solid fa-caret-down text-xs leading-3 text-gray-200"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 container mx-auto">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -82,7 +90,7 @@
     </nav>
 
     <div class="banner">
-        <img src="../images/Rectangle 512.png" alt="">
+        <img class="w-full" src="../images/Rectangle 512.png" alt="">
         <span class="banner-title">Services</span>
     </div>
 
@@ -104,160 +112,176 @@
 
 
     <div class="container mx-auto">
-        <h2 class="service__related--title">Services</h2>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 grid-flow-row-dense mt-5">
+        <h2 class="service__related--title font-bold text-center text-red-700 text-4xl mt-10 mb-10">Services</h2>
 
-            <div class="col-span-2">
-                <div class="flex service-main w-full">
-                    <img class="service__related--img" src="../images/Rectangle 58.png" alt="">
-                    <div class="service__related">
-                        <h2 class="service__related--name">ON LINE MACHINING</h2>
-                        <p class="service__related--description">SIU have the necessary technically qualified manpower,
-                            readily available with extensive equipment resources to provide a quality,
-                            cost effective range of in-situ service that achieve desired results within acceptably short
-                            time frames.
+        <div class="grid gap-5 sm:grid-cols-2 xl:gap-30px">
+            <div class="flex-row flex h-full">
+                <div class="h-full w-full flex">
+                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.1.png" alt="">
+                </div>
+                <div class=" flex flex-col bg-black w-full">
+                    <div class="services-content">
+                        <h2 class="services-title">ON LINE MACHINING</h2>
+                        <p class="services-desc">SIU have the necessary technically qualified manpower, readily 
+                            available with extensive equipment resources to provide a quality, cost effective
+                             range of in-situ service that achieve desired results within acceptably short time
+                              frames.
                         </p>
-                        <div class="test">
+                        <div class="services-btn">
+                           <a href="./serviceDeatlis.html"> <button class="button__service--view">View More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-row flex h-full">
+                <div class="h-full w-full flex">
+                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.2.png" alt="">
+                </div>
+                <div class="flex flex-col bg-black w-full">
+                    <div class="services-content">
+                        <h2 class="services-title">HARD FACING</h2>
+                        <p class="services-desc">SIU custom designs, manufactures, services and repairs fluid 
+                            film babbitt bearings and seals to keep large rotating equipment operating more 
+                            efficiently and reliably over an extended life.
+                        </p>
+                        <div class="services-btn">
                             <button class="button__service--view">View More</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-span-2">
-                <div class="flex service-main">
-                    <img class="service__related--img" src="../images/Rectangle 58.png" alt="">
-                    <div class="service__related">
-                        <h2 class="service__related--name">BABBITT REPAIR</h2>
-                        <p class="service__related--description">SIU custom designs, manufactures,
-                            services and repairs fluid film babbitt bearings and seals
-                            to keep large rotating equipment operating more efficiently and reliably over an extended
-                            life.
+            <div class="flex-row flex h-full">
+                <div class="h-full w-full flex">
+                    <img class="w-full h-full object-cover" src="../images/Rectangle 59.png" alt="">
+                </div>
+                <div class="flex flex-col bg-black w-full">
+                    <div class="services-content">
+                        <h2 class="services-title">GEAR BOX REPAIR</h2>
+                        <p class="services-desc">
+                            SIU have the necessary technically qualified manpower, readily available with extensive equipment
+                             resources to provide a quality, cost effective range of in-situ service that achieve desired
+                              results within acceptably short time frames.
                         </p>
-                        <div class="test">
+                        <div class="services-btn">
                             <button class="button__service--view">View More</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-span-2">
-                <div class="flex service-main">
-                    <img class="service__related--img" src="../images/Rectangle 58.png" alt="">
-                    <div class="service__related">
-                        <h2 class="service__related--name">GEAR BOX REPAIR</h2>
-                        <p class="service__related--description">SIU have the necessary technically qualified manpower,
-                            readily available
-                            with extensive equipment resources to provide a quality, cost effective range of in-situ
-                            service that achieve desired results within acceptably short time frames.
+            <div class="flex-row flex h-full">
+                <div class="h-full w-full flex">
+                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.png" alt="">
+                </div>
+                <div class="flex flex-col bg-black w-full">
+                    <div class="services-content">
+                        <h2 class="services-title">CYLINDER REPAIR</h2>
+                        <p class="services-desc">
+                            SIU custom designs, manufactures, services and repairs fluid film babbitt
+                             bearings and seals to keep large rotating equipment
+                             operating more efficiently and reliably over an extended life.
                         </p>
-                        <div class="test">
+                        <div class="services-btn">
                             <button class="button__service--view">View More</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-span-2">
-                <div class="flex service-main">
-                    <img class="service__related--img" src="../images/Rectangle 58.png" alt="">
-                    <div class="service__related">
-                        <h2 class="service__related--name">CYLINDER REPAIR</h2>
-                        <p class="service__related--description">SIU custom designs, manufactures,
-                            services and repairs fluid film babbitt bearings
-                            and seals to keep large rotating equipment operating more efficiently and reliably over an
-                            extended life.
+            <div class="flex-row flex h-full">
+                <div class="h-full w-full flex">
+                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.3.png" alt="">
+                </div>
+                <div class="flex flex-col bg-black w-full">
+                    <div class="services-content">
+                        <h2 class="services-title">CONTROL VALVE REPAIR</h2>
+                        <p class="services-desc">
+                            SIU have the necessary technically qualified manpower, readily available with extensive 
+                            equipment resources to provide a quality, cost effective
+                             range of in-situ service that achieve desired results within acceptably short time frames.
                         </p>
-                        <div class="test">
+                        <div class="services-btn">
                             <button class="button__service--view">View More</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-span-2">
-                <div class="flex service-main">
-                    <img class="service__related--img" src="../images/Rectangle 58.png" alt="">
-                    <div class="service__related">
-                        <h2 class="service__related--name">CONTROL VALVE REPAIR</h2>
-                        <p class="service__related--description">SIU have the necessary technically qualified manpower,
-                            readily available with extensive equipment resources to provide a quality,
-                            cost effective range of in-situ service that achieve desired results within acceptably short
-                            time frames.
+            <div class="flex-row flex h-full">
+                <div class="h-full w-full flex">
+                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.5.png" alt="">
+                </div>
+                <div class="flex flex-col bg-black w-full">
+                    <div class="services-content">
+                        <h2 class="services-title">BALL VALVE REPAIR</h2>
+                        <p class="services-desc">
+                            SIU custom designs, manufactures, services and repairs fluid 
+                            film babbitt bearings and seals to keep large
+                             rotating equipment operating more efficiently and reliably over an extended life.
                         </p>
-                        <div class="test">
+                        <div class="services-btn">
                             <button class="button__service--view">View More</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-span-2">
-                <div class="flex service-main">
-                    <img class="service__related--img" src="../images/Rectangle 59.png" alt="">
-                    <div class="service__related">
-                        <h2 class="service__related--name">BALL VALVE REPAIR</h2>
-                        <p class="service__related--description">SIU custom designs, manufactures,
-                            services and repairs fluid film babbitt bearings and seals
-                            to keep large rotating equipment operating more efficiently and reliably over an extended
-                            life.
+            <div class="flex-row flex h-full">
+                <div class="h-full w-full flex">
+                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.6.png" alt="">
+                </div>
+                <div class="flex flex-col bg-black w-full">
+                    <div class="services-content">
+                        <h2 class="services-title">PUMPS REPAIR</h2>
+                        <p class="services-desc">
+                            SIU have the necessary technically qualified manpower, readily available 
+                            with extensive equipment resources to provide a quality,
+                             cost effective range of in-situ service that achieve desired results within acceptably short time frames.
                         </p>
-                        <div class="button__service--related">
+                        <div class="services-btn">
                             <button class="button__service--view">View More</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-span-2">
-                <div class="flex service-main">
-                    <img class="service__related--img" src="../images/Rectangle 59.png" alt="">
-                    <div class="service__related">
-                        <h2 class="service__related--name">PUMPS REPAIR</h2>
-                        <p class="service__related--description">SIU have the necessary technically qualified manpower,
-                            readily available with extensive equipment resources to provide a quality, cost effective
-                            range of in-situ service that achieve desired results within acceptably short time frames.
+            <div class="flex-row flex h-full">
+                <div class="h-full w-full flex">
+                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.7.png" alt="">
+                </div>
+                <div class="flex flex-col bg-black w-full">
+                    <div class="services-content">
+                        <h2 class="services-title">HARD FACING</h2>
+                        <p class="services-desc">
+                            SIU custom designs, manufactures, services and repairs fluid film babbitt bearings and seals to
+                             keep large rotating equipment operating more efficiently and reliably over an extended life.
                         </p>
-                        <div class="button__service--related">
+                        <div class="services-btn">
                             <button class="button__service--view">View More</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-span-2">
-                <div class="flex service-main">
-                    <img class="service__related--img" src="../images/Rectangle 59.png" alt="">
-                    <div class="service__related">
-                        <h2 class="service__related--name">HARD FACING</h2>
-                        <p class="service__related--description">SIU custom designs, manufactures, services and
-                            repairs fluid film babbitt bearings and seals
-                            to keep large rotating equipment operating more efficiently and reliably over an extended
-                            life.
-                        </p>
-                        <div class="button__service--related">
-                            <button class="button__service--view">View More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+    </div>
 
-        <!-- pagination start -->
-        <div class="pagination mb-20">
-            <a href="#"
-                class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal text-white bg-red-700 border">
-                1
-            </a>
-            <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal bg-white border">
-                2
-            </a>
-            <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal bg-white border">
-                3
-            </a>
-        </div>
+    <!-- pagination start -->
+    <div class="pagination mb-20">
+        <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal text-white bg-red-700 border">
+            1
+        </a>
+        <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal bg-white border">
+            2
+        </a>
+        <a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal bg-white border">
+            3
+        </a>
+    </div>
 
-        <!-- pagination end -->
+    <!-- pagination end -->
     </div>
 
     <footer class="bg-black dark:bg-gray-900 ">
@@ -368,18 +392,19 @@
             </div>
         </div>
     </footer>
-      <!-- footer more  start-->
-<div class="bg-red-600 h-full">
-    <div class="container mx-auto">
-      <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-flow-row-dense">
-        <div class="col-span-1">
-          <h3 class="font-normal text-white fmore">© 2022 SIU Industry. All Rights Reserved.</h3>
+    <!-- footer more  start-->
+    <div class="bg-red-600 h-full">
+        <div class="container mx-auto">
+            <div
+                class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-flow-row-dense">
+                <div class="col-span-1">
+                    <h3 class="font-normal text-white fmore">© 2022 SIU Industry. All Rights Reserved.</h3>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="font-normal text-white fmore">Terms and Conditions . Privacy Policy . Sitemap</h3>
+                </div>
+            </div>
         </div>
-        <div class="col-span-1">
-          <h3 class="font-normal text-white fmore">Terms and Conditions  .  Privacy Policy  .  Sitemap</h3>
-        </div>
-      </div>
-    </div>
     </div>
     <!-- footer more  end-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>

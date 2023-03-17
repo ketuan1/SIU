@@ -6,25 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/36132d75ba.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Products Details</title>
     <link rel="stylesheet" href="../css/productDetails.css">
     <link rel="stylesheet" href="../dist/output.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <div class="heading">
-        <input class="heading__search--input" type="text" placeholder="Search...">
-        <i class="fa-solid fa-magnifying-glass icon-search"></i>
-        <span class="heading__language--title">EN
-          <i class="fa-solid fa-caret-down icon__language"></i>
-        </span>
-      </div>
+    <div class="heading h-12 m-h-12">
+        <div class="container">
+            <div class="flex justify-end">
+                <form action="" class="border">
+                    <input class="heading__search--input text-white" type="text" placeholder="Search...">
+                    <button> <i class="fa-solid fa-magnifying-glass text-xl leading-5 text-white mr-2"></i></button>
+                </form>
+                <div class="text-white mt-auto mb-auto ml-2">
+                    <span class="font-bold text-sm leading-4 text-white">EN
+                        <i class="fa-solid fa-caret-down text-xs leading-3 text-gray-200"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 container mx-auto">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="./home" class="flex items-center">
+            <a href="./home.html" class="flex items-center">
                 <img src="../images/SIU LOGO - COLOR 1.png" class="h-6 mr-3 sm:h-9" alt="" />
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
@@ -42,35 +50,37 @@
                 <ul
                     class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#"
+                        <a href="./home.html"
                             class="block py-2 pl-3 pr-4  text-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 dark:text-white"
                             aria-current="page">
-                            <i class="fa-solid fa-house icon-home"></i>
+                            <i class="fa-solid fa-house ml-7"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT US</a>
+                        <a href="./about.html"
+                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT
+                            US</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./product.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PRODUCTS</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./services.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">SERVICES</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./manufacturing.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">MANUFACTURING</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./new.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">NEWS</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT US</a>
+                        <a href="./contact.html"
+                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT
+                            US</a>
                     </li>
                 </ul>
             </div>
@@ -79,11 +89,12 @@
 
     <div class="home-menu">
         <div class="container mx-auto">
-            <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-2 grid-flow-row-dense">
+            <div
+                class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-2 grid-flow-row-dense">
                 <div class="col-span-12">
-                    <ul class="home__menu--item">
+                    <ul class="flex">
                         <li class="home__menu--list">
-                            <i class="fa-solid fa-house"></i> <span class="home__menu--list-more">></span>
+                            <i class="fa-solid fa-house"></i> <span class="ml-2">></span>
                         </li>
                         <li class="home__menu--list">products details</li>
                     </ul>
@@ -94,48 +105,40 @@
 
     <!-- products details start -->
     <div class="container mx-auto">
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 grid-flow-row-dense mt-10">
-            <div class="col-span-1 ml-5">
-                
-                    <img class="mb-2" src="../images/Rectangle d1.png" alt="">
-                    <img class="mb-2" src="../images/Rectangle d2.png" alt="">
-                    <img class="mb-2" src="../images/Rectangle d3.png" alt="">
-                    <img class="mb-2" src="../images/Rectangle d4.png" alt="">
-                    <img class="mb-2" src="../images/Rectangle d5.png" alt="">
-                    <img src="../images/Rectangle d6.png" alt="">
-            </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-4 grid-flow-row-dense mt-10">
             <div class="col-span-1">
-                <div class="products__details--main">
-                    <img class="products__details--main-img" src="../images/Rectangle 3211.png" alt="">
-                </div>
+                <div class="gallery__track"></div>
             </div>
-            <div class="col-span-2">
-                <div class="products__new">
-                    <span class="products__new--title">NEW</span>
+            <div class="col-span-3">
+                <div class="gallery__core overflow-hidden w-full relative"><img src="#" /></div>
+            </div>
+            <div class="col-span-8">
+                <div class="relative">
+                    <span class="details__new--title">NEW</span>
                 </div>
-                <div class="products__content">
-                    <h2 class="products__content--header">198 CORRISION-RESISTANT GRAPHITE GASKET</h2>
-                    <div class="products__details--border"></div>
-                    <h4 class="products__content--title">For Extreme High-Temperature Applications</h4>
-                    <p class="products__content--description">
+                <div class="details">
+                    <h2 class="details-header">198 CORRISION-RESISTANT GRAPHITE GASKET</h2>
+                    <div class="details-border"></div>
+                    <h4 class="details-title">For Extreme High-Temperature Applications</h4>
+                    <p class="details-description">
                         198 is a high-purity graphite sheet gasket with no fillers or binders. 198 contains a corrosion
                         inhibitor
                         that makes it an excellent gasket for almost all environments.
                         It is ideal for use in extreme temperature applications where metal reinforcement cannot be
                         used.
                     </p>
-                    <div class="products__details--border"></div>
+                    <div class="details-border"></div>
                     <div class="flex mt-10">
                         <button class="products__details--view">
                             <i class="fa-solid fa-phone"></i>
                             CONTACT US</button>
-            
                         <button class="button__product--pdf">
                             <i class="fa-regular fa-file-pdf"></i>
                             DOWNLOAD BROCHURE</button>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- products details end -->
@@ -165,13 +168,13 @@
 
                     <div class="flex">
                         <h4 class="products__technical--title">Pressure Limit</h4>
-                            <div  class="products__technical--list-more">
-                                <p>
-                                    140 bar g (2000 psig), Compressibility (ASTM-F36)40% Creep Relaxation (ASTM-F38)
-                                    <p>5% Recovery (ASTM-F36)12 to 17%</p>
-                                  <p>  P x T = 58,000 (°C x bar g)​​</p>
-                                </p>
-                            </div>
+                        <div class="products__technical--list-more">
+                            <p>
+                                140 bar g (2000 psig), Compressibility (ASTM-F36)40% Creep Relaxation (ASTM-F38)
+                            <p>5% Recovery (ASTM-F36)12 to 17%</p>
+                            <p> P x T = 58,000 (°C x bar g)​​</p>
+                            </p>
+                        </div>
                     </div>
                     <div class="products__details--border"></div>
 
@@ -182,87 +185,173 @@
                     <div class="products__details--border"></div>
 
                     <span class="products__technical--view">VIEW MORE
-                        <i class="fa-solid fa-angles-down ml-8"></i>
+                        <i id="view" class="fa-solid fa-angles-down ml-8"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- list 2 -->
+            <div class="bg-gray-200">
+                <div id="technical" class="products__technical">
+                    <div class="products__btn--technical">
+                        <button class="product__btn--feature">FEATURES & BENEFITS</button>
+                        <button class="product__btn--app">APPLICATIONS</button>
+                        <button class="product__btn--data">TECHNICAL DATA</button>
+                    </div>
+
+                    <h2 class="products__technical--header">TECHNICAL DATA</h2>
+                    <div class="products__details--border"></div>
+
+                    <div class="flex">
+                        <h4 class="products__technical--title">Temperature Limit</h4>
+                        <p class="products__technical--list">
+                            –240° C (–400° F) to 2760° C
+                            (5000° F) in non-oxidizing services
+                            455° C (850° F) in oxidizing services
+                        </p>
+                    </div>
+                    <div class="products__details--border"></div>
+
+                    <div class="flex">
+                        <h4 class="products__technical--title">Pressure Limit</h4>
+                        <div class="products__technical--list-more">
+                            <p>
+                                140 bar g (2000 psig), Compressibility (ASTM-F36)40% Creep Relaxation (ASTM-F38)
+                            <p>5% Recovery (ASTM-F36)12 to 17%</p>
+                            <p> P x T = 58,000 (°C x bar g)​​</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products__details--border"></div>
+
+                    <div class="flex">
+                        <h4 class="products__technical--title">Color</h4>
+                        <p class="products__technical--list">Grey</p>
+                    </div>
+                    <div class="products__details--border"></div>
+
+                    <span class="products__technical--view">VIEW MORE
+                        <i id="show-less" class="fa-solid fa-angles-up ml-8"></i>
                     </span>
                 </div>
             </div>
         </div>
         <!-- products details table end -->
     </div>
-      <!-- product related start -->
-      <div class="background mt-20">
-          <div class="container mx-auto">
+
+
+    <!-- product related start -->
+    <div class="background mt-20">
+        <div class="container mx-auto">
             <h2 class="font-bold text-2xl leading-7 text-red-600 pt-8">RELATED PRODUCTS</h2>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 grid-flow-row-dense mt-10">
-            <div class="col-span-1 products__border">
-                <div class="products__content">
-                    <div class="products__new">
-                        <span class="products__new--title">NEW</span>
-                    </div>
-                    <div class="products__img">
-                        <img class="products__img--content" src="../images/Rectangle 3.png" alt="">
-                    </div>
-                    <p class="products__title">Lubricants</p>
-                    <h2 class="products__header">WIRE ROPE 455 ARAMID FIBER GASKET</h2>
-                    <div class="products__btn">
-                        <button class="products__btn--view">VIEW MORE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-1 products__border">
-                <div class="products__content">
-                    <div class="products__new">
-                        <span class="products__new--title">NEW</span>
-                    </div>
-                    <div class="products__img">
-                        <img class="products__img--content" src="../images/Rectangle 4.png" alt="">
-                    </div>
-                    <div class="products__name">
-                        <p class="products__title">O Ring</p>
-                        <h2 class="products__header">D-RINGS</h2>
-                        <div class="products__btn">
-                            <button class="products__btn--view">VIEW MORE</button>
+            <div class="relative mt-5">
+                <div class="swiper products-details w-full h-full">
+                    <div class="swiper-wrapper mb-10">
+
+                        <div class="swiper-slide">
+                            <div class="products__content">
+                                <div class="products__new">
+                                    <span class="products__new--title">NEW</span>
+                                </div>
+                                <div class="products__img">
+                                    <img class="products__img--content" src="../images/Rectangle 3.png" alt="">
+                                </div>
+                                <p class="products__title">Lubricants</p>
+                                <h2 class="products__header">WIRE ROPE 455 ARAMID FIBER GASKET</h2>
+                                <div class="products__btn">
+                                    <button class="products__btn--view">VIEW MORE</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="products__content">
+                                <div class="products__new">
+                                    <span class="products__new--title">NEW</span>
+                                </div>
+                                <div class="products__img">
+                                    <img class="products__img--content" src="../images/Rectangle 4.png" alt="">
+                                </div>
+                                <p class="products__title">O Ring</p>
+                                <h2 class="products__header">D-RINGS</h2>
+                                <div class="products__btn">
+                                    <button class="products__btn--view">VIEW MORE</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="products__content">
+                                <div class="products__new">
+                                    <span class="products__new--title">NEW</span>
+                                </div>
+                                <div class="products__img">
+                                    <img class="products__img--content" src="../images/Rectangle 5.png" alt="">
+                                </div>
+                                <p class="products__title">Chemicals</p>
+                                <h2 class="products__header">CHESTERTON 273 ELECTRIC MOTOR CLEANER</h2>
+                                <div class="products__btn">
+                                    <button class="products__btn--view">VIEW MORE</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="products__content">
+                                <div class="products__new">
+                                    <span class="products__new--title">NEW</span>
+                                </div>
+                                <div class="products__img">
+                                    <img class="products__img--content" src="../images/Rectangle 6.png" alt="">
+                                </div>
+                                <p class="products__title">Blasting Machine</p>
+                                <h2 class="products__header">FEED UNIT 170 HP</h2>
+                                <div class="products__btn">
+                                    <button class="products__btn--view">VIEW MORE</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="products__content">
+                                <div class="products__new">
+                                    <span class="products__new--title">NEW</span>
+                                </div>
+                                <div class="products__img">
+                                    <img class="products__img--content" src="../images/Rectangle 3.png" alt="">
+                                </div>
+                                <p class="products__title">Lubricants</p>
+                                <h2 class="products__header">WIRE ROPE 455 ARAMID FIBER GASKET</h2>
+                                <div class="products__btn">
+                                    <button class="products__btn--view">VIEW MORE</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="products__content">
+                                <div class="products__new">
+                                    <span class="products__new--title">NEW</span>
+                                </div>
+                                <div class="products__img">
+                                    <img class="products__img--content" src="../images/Rectangle 3.png" alt="">
+                                </div>
+                                <p class="products__title">Lubricants</p>
+                                <h2 class="products__header">WIRE ROPE 455 ARAMID FIBER GASKET</h2>
+                                <div class="products__btn">
+                                    <button class="products__btn--view">VIEW MORE</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-span-1 products__border">
-                <div class="products__content">
-                    <div class="products__new">
-                        <span class="products__new--title">NEW</span>
-                    </div>
-                    <div class="products__img">
-                        <img class="products__img--content" src="../images/Rectangle 32.1.png" alt="">
-                    </div>
-                    <p class="products__title">Chemicals</p>
-                    <h2 class="products__header">CHESTERTON 273 ELECTRIC MOTOR CLEANER</h2>
-                    <div class="products__btn">
-                        <button class="products__btn--view">VIEW MORE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-1 products__border">
-                <div class="products__content">   
-                    <div class="products__new">
-                        <span class="products__new--title">NEW</span>
-                    </div>                    
-                    <div class="products__img">
-                        <img class="products__img--content" src="../images/Rectangle 32.2.png" alt="">
-                    </div>
-                    <div class="products__name">
-                        <p class="products__title">Blasting Machine</p>
-                        <h2 class="products__header">FEED UNIT 170 HP</h2>
-                        <div class="products__btn">
-                            <button class="products__btn--view">VIEW MORE</button>
-                        </div>
-                    </div>
-                </div>
+                <div class="swiper-button-next btn-next"></div>
+                <div class="swiper-button-prev btn-prev"></div>
             </div>
         </div>
     </div>
-    </div>
     <!-- product related end -->
-    <footer class="bg-black dark:bg-gray-900 mt-20">
+    <footer class="bg-black dark:bg-gray-900">
         <div class="grid grid-cols-2 gap-2 px-6 py-8 md:grid-cols-4 container mx-auto">
             <div>
                 <h2 class="mb-6 font-bold text-2xl leading-7 text-white">SIU INDUSTRY</h2>
@@ -272,12 +361,13 @@
                         <a href="#">611 Ta Quang Buu St. Dist.8, Ho Chi Minh City , Viet Nam</a>
                     </li>
                     <li class="mb-4">
-                        <i class="fa-brands fa-firefox-browser font-light text-base leading-4 text-center text-white"></i>
+                        <i
+                            class="fa-brands fa-firefox-browser font-light text-base leading-4 text-center text-white"></i>
                         <a href="#"> www.siuindustry.com</a>
                     </li>
                     <li class="mb-4">
                         <i class="fa-solid fa-envelope font-light text-base leading-4 text-center text-white"></i>
-                        <a href="#">  sales@siuindustry.com</a>
+                        <a href="#"> sales@siuindustry.com</a>
                     </li>
                     <li class="mb-4">
                         <i class="fa-solid fa-phone font-light text-base leading-4 text-center text-white"></i>
@@ -298,9 +388,9 @@
             </div>
             <div>
                 <h2 class="mb-6 font-bold text-2xl leading-7 text-white">PRODUCTS</h2>
-                <ul class="font-normal text-base leading-6 text-white list-disc footer">
+                <ul class="font-normal text-base leading-6 text-white list-disc py-[0px] px-[20px]">
                     <li class="mb-4">
-                        <a href="#">    Gasket</a>
+                        <a href="#"> Gasket</a>
                     </li>
                     <li class="mb-4">
                         <a href="#">Packing</a>
@@ -319,11 +409,11 @@
                     </li>
                     <li class="mb-4">
                         <a href="#">Fittings</a>
-                    </li>         
+                    </li>
                 </ul>
             </div>
             <div>
-                <ul class="font-normal text-base leading-6 text-white list-disc footer">
+                <ul class="font-normal text-base leading-6 text-white list-disc py-[0px] px-[20px]">
                     <li class="mb-4">
                         <a href="#">Raw Materials​​​​</a>
                     </li>
@@ -349,7 +439,7 @@
             </div>
             <div>
                 <h2 class="mb-6 font-bold text-2xl leading-7 text-white">QUICK LINKS</h2>
-                <ul class="font-normal text-base leading-6 text-white list-disc footer">
+                <ul class="font-normal text-base leading-6 text-white list-disc py-[0px] px-[20px]">
                     <li class="mb-4">
                         <a href="#">About us</a>
                     </li>
@@ -370,21 +460,193 @@
         </div>
     </footer>
     <!-- footer more  start-->
-<div class="bg-red-600 h-full">
-    <div class="container mx-auto">
-      <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-flow-row-dense">
-        <div class="col-span-1">
-          <h3 class="font-normal text-white fmore">© 2022 SIU Industry. All Rights Reserved.</h3>
+    <div class="bg-red-600 h-full">
+        <div class="container mx-auto">
+            <div
+                class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-flow-row-dense">
+                <div class="col-span-1">
+                    <h3 class="font-normal text-white fmore">© 2022 SIU Industry. All Rights Reserved.</h3>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="font-normal text-white fmore">Terms and Conditions . Privacy Policy . Sitemap</h3>
+                </div>
+            </div>
         </div>
-        <div class="col-span-1">
-          <h3 class="font-normal text-white fmore">Terms and Conditions  .  Privacy Policy  .  Sitemap</h3>
-        </div>
-      </div>
-    </div>
     </div>
     <!-- footer more  end-->
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <script>
+        var swiper = new Swiper(".products-details", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                    resistanceRatio: 0.85
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    resistanceRatio: 0.85
+                },
+                980: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    resistanceRatio: 0.85
+                },
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                    resistanceRatio: 0
+                }
+            }
+        });
+    </script>
+
+    <script>
+        let switching = false;
+
+        function updateGallery() {
+            $(".gallery__core img, .gallery__bg img").attr("src", galleryItems[0].url);
+            $(".gallery__track").empty();
+            $.each(galleryItems, function (index, item) {
+                $(".gallery__track").append(
+                    '<div class="gallery__track__item ' +
+                    (index == 0 ? "active" : "") +
+                    '"><img src="' +
+                    item.thumb +
+                    '" data-full="' +
+                    item.url +
+                    '" alt=""></div>'
+                );
+            });
+        }
+
+        $(".gallery__track").on("click", ".gallery__track__item", function () {
+            if (!switching) {
+                switching = true;
+                $(this).addClass("active").siblings().removeClass("active");
+                // animate in new core image and background image
+                const $oldBGImg = $(".gallery__bg img");
+                const $oldImg = $(".gallery__core img");
+                const newImg = $(this).find("img").data("full");
+                const $newImg = $('<img class="slide-in" src="' + newImg + '">');
+                const $newBGImg = $('<img class="fade-in" src="' + newImg + '">');
+                $(".gallery__core").append($newImg);
+                $(".gallery__bg").append($newBGImg);
+                setTimeout(function () {
+                    $newImg.addClass("shift-up");
+                    $oldImg.addClass("shift-up");
+                    $oldBGImg.addClass("fade-out");
+                    $newBGImg.addClass("fading");
+                    setTimeout(function () {
+                        $(".gallery__core img").eq(0).remove();
+                        $(".gallery__bg img").eq(0).remove();
+                        $(".slide-in").removeClass("slide-in shift-up");
+                        $(".fade-in").removeClass("fade-in fading");
+                        switching = false;
+                    }, 400);
+                }, 10);
+            }
+        });
+
+        let galleryItems = [
+            {
+                id: 1,
+                url: "../images/Rectangle 32.7.png",
+                thumb: "../images/Rectangle d1.png",
+            },
+            {
+                id: 2,
+                url: "../images/Rectangle 32.3.png",
+                thumb: "../images/Rectangle d2.png",
+            },
+
+            {
+                id: 3,
+                url: "../images/Rectangle 32.1.png",
+                thumb: "../images/Rectangle d3.png",
+            },
+
+            {
+                id: 4,
+                url: "../images/Rectangle d4.png",
+                thumb: "../images/Rectangle d4.png",
+            },
+
+            {
+                id: 5,
+                url: "../images/Rectangle 511.png",
+                thumb: "../images/Rectangle d5.png",
+            },
+
+        ];
+
+        updateGallery(); // once on load
+
+        // //demo
+        // $("#nexts").click(function (event) {
+        //     $(".gallery__track.active").parent().next().find($(".gallery__core img")).trigger('click');
+        //     console.log('sa');
+        // });
+
+        // $("#prevs").click(function (event) {
+        //     $(".gallery__track.active").parent().prev().find($(".gallery__core img")).trigger('click');
+        //     console.log('as');
+        // });
+
+        // function debounce(func, timeout = 300) {
+        //     let timer;
+        //     return (...args) => {
+        //         clearTimeout(timer);
+        //         timer = setTimeout(() => {
+        //             func.apply(this, args);
+        //         }, timeout);
+        //     };
+        // }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var list = $(".products__technical");
+            var numToShow = 1;
+            var button = $("#view");
+            var numInList = list.length;
+            list.hide();
+            if (numInList > numToShow) {
+                button.show();
+            }
+            list.slice(0, numToShow).show();
+
+            button.click(function () {
+                var showing = list.filter(':visible').length;
+                list.slice(showing - 1, showing + numToShow).fadeIn();
+                var nowShowing = list.filter(':visible').length;
+                if (nowShowing >= numInList) {
+                    button.hide();
+                }
+            });
+
+            $('#show-less').click(function () {
+                $('#technical').hide(150);
+                $('#view').show();
+                $(this).hide();
+            });
+        });
+    </script>
+
+
 </body>
+
 </html>

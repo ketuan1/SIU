@@ -19,13 +19,21 @@
 
 </head>
 <body>
-    <div class="heading">
-        <input class="heading__search--input" type="text" placeholder="Search...">
-        <i class="fa-solid fa-magnifying-glass icon-search"></i>
-        <span class="heading__language--title">EN
-          <i class="fa-solid fa-caret-down icon__language"></i>
-        </span>
-      </div>
+  <div class="heading h-12 m-h-12">
+    <div class="container">
+        <div class="flex justify-end">
+            <form action="" class="border">
+                <input class="heading__search--input text-white" type="text" placeholder="Search...">
+                <button> <i class="fa-solid fa-magnifying-glass text-xl leading-5 text-white mr-2"></i></button>
+            </form>
+            <div class="text-white mt-auto mb-auto ml-2">
+                <span class="font-bold text-sm leading-4 text-white">EN
+                    <i class="fa-solid fa-caret-down text-xs leading-3 text-gray-200"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
 
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 container mx-auto">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -50,7 +58,7 @@
                         <a href="./home.html"
                             class="block py-2 pl-3 pr-4  text-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 dark:text-white"
                             aria-current="page">
-                            <i class="fa-solid fa-house icon-home"></i>
+                            <i class="fa-solid fa-house ml-7"></i>
                         </a>
                     </li>
                     <li>
@@ -81,55 +89,61 @@
             </div>
         </div>
     </nav>
-    <div class="banner">
+    <!-- banner start -->
+    <div class="relative">
         <img class="w-full" src="../images/Rectangle 512.png" alt="">
-        <span class="banner-title">News</span>
+        <span class="banner-title font-bold text-6xl uppercase text-center text-white">News</span>
     </div>
+    <!-- banner end -->
 
-    <div class="home-menu">
+    <!-- home menu start -->
+    <div class=" bg-gray-200 h-12">
         <div class="container mx-auto">
             <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-2 grid-flow-row-dense">
                 <div class="col-span-12">
-                    <ul class="home__menu--item">
+                    <ul class="flex">
                         <li class="home__menu--list">
-                            <i class="fa-solid fa-house"></i> <span class="home__menu--list-more">></span>
+                            <i class="fa-solid fa-house"></i> <span class="ml-2">></span>
                         </li>
-                        <li class="home__menu--list">New</li>
+                        <li class="home__menu--list ml-2">New</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- home menu end -->
+
     <!-- content of page news start -->
     <div class="action">
         <div class="flex items-center justify-center mt-10">
-            <img class="" src="../images/Frame 18.png" alt="">
-            <img class="ml-5" src="../images/Frame 19.png" alt="">
+            <button class="font-bold text-base leading-6 text-center text-white bg-red-600 mr-5 px-[45px] py-[10px]">ACTIVITY NEWS</button>
+            <button class="font-bold text-base leading-6 text-center text-gray-800 bg-gray-200 px-[80px] py-[10px] hover:bg-red-600 hover:text-white">EVENTS</button>
         </div>
     </div>
     <!-- content of page news end -->
 
-
     <!-- grid grid-cols-1 gap-1 sm:grid-cols-2 -->
     <div class="container mx-auto">
-        <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 grid-flow-row-dense mt-5">
-            <div class="col-span-3">
-                <img class="content__page--img h-full object-cover" src="../images/Rectangle 513.png" alt="">
+        <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 grid-flow-row-dense mt-5">
+            <div class="col-span-8">
+                <img class="w-full h-full object-cover" src="../images/Rectangle 513.png" alt="">
             </div>
-            <div class="col-span-1 bg-gray-200">
+            <div class="col-span-4 bg-gray-200">
                 <img class="banner__calendar" src="../images/Rectangle 55.png" alt="">
-                <span class="title__calendar">Nov 2, 2022</span>
+                <span class="title__calendar font-normal text-sm leading-4 text-white">Nov 2, 2022</span>
 
                 <div class="content__new">
-                  <h2 class="header__new">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
-                  <p class="description__new">High Performing Grease that Exhibits Extreme Pressure, Water,
+                  <h2 class="header__new font-bold text-3xl leading-9 mb-5">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
+                  <p class="description__new font-normal text-base leading-6 mb-10">High Performing Grease that Exhibits Extreme Pressure, Water,
                       and Corrosion Resistance to protect. High Performing Grease that Exhibits
                       Extreme Pressure, Water, and Corrosion Resistance to protect ...</p>
-                  <div class="view__title">
-                      <span class="view__more--new-content">VIEW MORE
-                          <i class="fa-solid fa-arrow-right icon__view--more"></i>
-                      </span>
+                  <div class="hover:text-red-600 cursor-pointer">
+                     <a href="./newdetails.html">
+                          <span class="font-bold text-sm">VIEW MORE
+                              <i class="fa-solid fa-arrow-right text-red-700 ml-1"></i>
+                          </span>
+                     </a>
                   </div>
                 </div>
             </div>
@@ -143,8 +157,8 @@
       <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 grid-flow-row-dense mt-10">
 
         <div class="col-span-1">
-          <img class="new__img" src="../images/Rectangle 40.png" alt="">
-          <div class="banner__cards">
+          <img class="w-full object-cover" src="../images/Rectangle 40.png" alt="">
+          <div class="relative">
             <img class="banner_img--cards" src="../images/Rectangle 55.png" alt="">
             <span class="banner__cards--title">Nov 2, 2022</span>
           </div>
@@ -152,16 +166,18 @@
             <h2 class="new__content--header">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
             <p class="new__content--description">High Performing Grease that Exhibits Extreme Pressure, Water, and
               Corrosion Resistance to protect ...</p>
-            <div class="view__title">
-              <span class="view__more--new">VIEW MORE
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
+            <div class="hover:text-red-600 cursor-pointer">
+              <a href="./newdetails.html">
+                  <span class="font-bold text-sm">VIEW MORE
+                    <i class="fa-solid fa-arrow-right text-red-700 ml-1"></i>
+                  </span>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-span-1">
-          <img class="new__img" src="../images/Rectangle 40 (1).png" alt="">
-          <div class="banner__cards">
+          <img class="w-full object-cover" src="../images/Rectangle 40 (1).png" alt="">
+          <div class="relative">
             <img class="banner_img--cards" src="../images/Rectangle 55.png" alt="">
             <span class="banner__cards--title">Nov 2, 2022</span>
           </div>
@@ -169,16 +185,18 @@
             <h2 class="new__content--header">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
             <p class="new__content--description">High Performing Grease that Exhibits Extreme Pressure, Water, and
               Corrosion Resistance to protect ...</p>
-            <div class="view__title">
-              <span class="view__more--new">VIEW MORE
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </div>
+              <div class="hover:text-red-600 cursor-pointer">
+                <a href="./newdetails.html">
+                    <span class="font-bold text-sm">VIEW MORE
+                      <i class="fa-solid fa-arrow-right text-red-700 ml-1"></i>
+                    </span>
+                </a>
+              </div>
           </div>
         </div>
         <div class="col-span-1">
-          <img class="new__img" src="../images/Rectangle 40 (2).png" alt="">
-          <div class="banner__cards">
+          <img class="w-full object-cover" src="../images/Rectangle 40 (2).png" alt="">
+          <div class="relative">
             <img class="banner_img--cards" src="../images/Rectangle 55.png" alt="">
             <span class="banner__cards--title">Nov 2, 2022</span>
           </div>
@@ -186,17 +204,19 @@
             <h2 class="new__content--header">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
             <p class="new__content--description">High Performing Grease that Exhibits Extreme Pressure, Water, and
               Corrosion Resistance to protect ...</p>
-            <div class="view__title">
-              <span class="view__more--new">VIEW MORE
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </div>
+              <div class="hover:text-red-600 cursor-pointer">
+                <a href="./newdetails.html">
+                    <span class="font-bold text-sm">VIEW MORE
+                      <i class="fa-solid fa-arrow-right text-red-700 ml-1"></i>
+                    </span>
+                </a>
+              </div>
           </div>
         </div>
 
         <div class="col-span-1">
-            <img class="new__img" src="../images/Rectangle 40 (3).png" alt="">
-            <div class="banner__cards">
+            <img class="w-full object-cover" src="../images/Rectangle 40 (3).png" alt="">
+            <div class="relative">
               <img class="banner_img--cards" src="../images/Rectangle 55.png" alt="">
               <span class="banner__cards--title">Nov 2, 2022</span>
             </div>
@@ -204,35 +224,17 @@
               <h2 class="new__content--header">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
               <p class="new__content--description">High Performing Grease that Exhibits Extreme Pressure, Water, and
                 Corrosion Resistance to protect ...</p>
-              <div class="view__title">
-                <span class="view__more--new">VIEW MORE
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-span-1">
-            <img class="new__img" src="../images/Rectangle 40 (4).png" alt="">
-            <div class="banner__cards">
-              <img class="banner_img--cards" src="../images/Rectangle 55.png" alt="">
-              <span class="banner__cards--title">Nov 2, 2022</span>
-            </div>
-            <div class="new__content">
-              <h2 class="new__content--header">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
-              <p class="new__content--description">High Performing Grease that Exhibits Extreme Pressure, Water, and
-                Corrosion Resistance to protect ...</p>
-              <div class="view__title">
-                <span class="view__more--new">VIEW MORE
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-              </div>
+                <div class="hover:text-red-600 cursor-pointer">
+                  <span class="font-bold text-sm">VIEW MORE
+                    <i class="fa-solid fa-arrow-right text-red-700 ml-1"></i>
+                  </span>
+                </div>
             </div>
           </div>
 
           <div class="col-span-1">
-            <img class="new__img" src="../images/Rectangle 40 (5).png" alt="">
-            <div class="banner__cards">
+            <img class="w-full object-cover" src="../images/Rectangle 40 (4).png" alt="">
+            <div class="relative">
               <img class="banner_img--cards" src="../images/Rectangle 55.png" alt="">
               <span class="banner__cards--title">Nov 2, 2022</span>
             </div>
@@ -240,11 +242,29 @@
               <h2 class="new__content--header">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
               <p class="new__content--description">High Performing Grease that Exhibits Extreme Pressure, Water, and
                 Corrosion Resistance to protect ...</p>
-              <div class="view__title">
-                <span class="view__more--new">VIEW MORE
-                  <i class="fa-solid fa-arrow-right"></i>
-                </span>
-              </div>
+                <div class="hover:text-red-600 cursor-pointer">
+                  <span class="font-bold text-sm">VIEW MORE
+                    <i class="fa-solid fa-arrow-right text-red-700 ml-1"></i>
+                  </span>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-span-1">
+            <img class="w-full object-cover" src="../images/Rectangle 40 (5).png" alt="">
+            <div class="relative">
+              <img class="banner_img--cards" src="../images/Rectangle 55.png" alt="">
+              <span class="banner__cards--title">Nov 2, 2022</span>
+            </div>
+            <div class="new__content">
+              <h2 class="new__content--header">New Chesterton 638 Electric Motor Grease - Empowering Pumps</h2>
+              <p class="new__content--description">High Performing Grease that Exhibits Extreme Pressure, Water, and
+                Corrosion Resistance to protect ...</p>
+                <div class="hover:text-red-600 cursor-pointer">
+                  <span class="font-bold text-sm">VIEW MORE
+                    <i class="fa-solid fa-arrow-right text-red-700 ml-1"></i>
+                  </span>
+                </div>
             </div>
           </div>
       </div>
@@ -257,7 +277,7 @@
     <!-- cards content end -->
 
     <!-- pagination start -->
-    <div class="pagination">
+    <div class="text-center mt-10">
         <a href="#"
             class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal text-white bg-red-700 border dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700">
             1

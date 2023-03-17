@@ -14,13 +14,21 @@
 </head>
 
 <body>
-    <div class="heading">
-        <input class="heading__search--input" type="text" placeholder="Search...">
-        <i class="fa-solid fa-magnifying-glass icon-search"></i>
-        <span class="heading__language--title">EN
-          <i class="fa-solid fa-caret-down icon__language"></i>
-        </span>
-      </div>    
+    <div class="heading h-12 m-h-12">
+        <div class="container">
+          <div class="flex justify-end">
+            <form action="" class="border">
+              <input class="heading__search--input text-white" type="text" placeholder="Search...">
+            <button>  <i class="fa-solid fa-magnifying-glass text-xl leading-5 text-white mr-2"></i></button>
+            </form>
+            <div class="text-white mt-auto mb-auto ml-2">
+              <span class="font-bold text-sm leading-4 text-white">EN
+                <i class="fa-solid fa-caret-down text-xs leading-3 text-gray-200"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>   
 
     <div class="box-nav">
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 container mx-auto">
@@ -43,34 +51,34 @@
                 <ul
                     class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#"
+                        <a href="./home.html"
                             class="block py-2 pl-3 pr-4  text-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 dark:text-white"
                             aria-current="page">
                             <i class="fa-solid fa-house icon-home"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./about.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT US</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./product.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PRODUCTS</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./services.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">SERVICES</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./manufacturing.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">MANUFACTURING</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./new.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">NEWS</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./contact.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT US</a>
                     </li>
                 </ul>
@@ -484,7 +492,7 @@
                         </div>
                         <h2 class="products__header">455 ARAMID FIBER GASKET</h2>
                         <div class="products__btn">
-                            <button class="products__btn--view">VIEW MORE</button>
+                           <a href="./productDetails.html"> <button class="products__btn--view">VIEW MORE</button></a>
                         </div>
                     </div>
                 </div>
@@ -577,7 +585,7 @@
         <!-- products megamenu end -->
 
         <!-- pagination start -->
-        <div class="pagination">
+        <div class="text-center mt-7">
             <a href="#"
                 class="inline-flex items-center px-4 py-2 ml-3 text-sm font-normal text-white bg-red-700 border">
                 1

@@ -3,61 +3,28 @@
 
 .heading {
   background: #333333;
-  height: 45px;
-  max-height: 45px;
-  width: 100%;
-  position: relative;
 }
 
 .heading__search--input {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  height: 45px;
-  max-height: 45px;
+  height: 46px;
   border-left: 1px solid $colorTitle;
   border-right: 1px solid $colorTitle;
-}
-
-.icon-search {
-  font-size: 20px;
-  line-height: 20px;
-  color: #FFFFFF;
-  position: absolute;
-  top: 20%;
-  left: 61%;
-}
-
-.heading__language--title {
-  position: absolute;
-  top: 30%;
-  left: 64%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #FFFFFF;
+  border: none;
 }
 
 input[type="text"] {
   background-color: $colorText;
 }
 
-.icon-home {
-  margin-left: 30px;
-}
-
-.logo__menu--item {
-  margin-top: 8px;
-  width: 100%;
+.nav-border {
+  border-left: 1px solid #d1d1d1;
 }
 
 //* home menu item start */
-.home-menu {
-  background-color: $backgroundColor;
-}
 
-.home__menu--item {
-   display: flex;
+.home-menu {
+  background-color: #f5f5f5;
+  height: 50px;
 }
 
 .home__menu--list {
@@ -65,14 +32,10 @@ input[type="text"] {
   font-size: $fontSize14;
   line-height: 50px;
   color: #666666;
-  margin-left: 10px;
 }
 
-.home__menu--list-more {
-   margin-left: 10px;
-}
 /* home menu item end */
-  
+
 /* navigation start */
 .nav-main {
   background-color: #ffffff;
@@ -80,41 +43,9 @@ input[type="text"] {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navigation {
-  margin-left: 30px;
-
-  &__menu {
-    display: flex;
-    margin-left: 260px;
-    cursor: pointer;
-    &--item:hover {
-      color: $colorTextFocus;
-    }
-    &--item {
-      margin-right: 30px;
-      line-height: 65px;
-      font-style: normal;
-      font-weight: 700;
-    }
-  }
-}
-
-.icon-home {
-  margin-left: 30px;
-}
-
-.logo__menu--item {
-  margin-top: 8px;
-  width: 100%;
-}
-
 /* navigation end */
 
 /* banner start */
-
-.banner {
-  position: relative;
-}
 
 .banner-title {
   position: absolute;
@@ -131,29 +62,6 @@ input[type="text"] {
 }
 
 /* banner end */
-
-/* home menu item start */
-.home-menu {
-  background-color: #f5f5f5;
-  height: 50px;
-}
-
-.home__menu--item {
-  display: flex;
-}
-
-.home__menu--list {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 50px;
-  color: #666666;
-  margin-left: 10px;
-}
-
-.home__menu--list-more {
-  margin-left: 10px;
-}
-/* home menu item end */
 
 //   category products start
 
@@ -200,7 +108,6 @@ input[type="text"] {
   width: 240px;
   height: 50px;
   background: #ffffff;
-  position: relative;
 }
 
 .sort__icon {
@@ -217,6 +124,7 @@ input[type="text"] {
 .products {
   &__border {
     border: 1px solid #eeeeee;
+    height: auto;
   }
   &__content {
     background: $colorTitle;
@@ -279,19 +187,17 @@ input[type="text"] {
       border: 1px solid #e41623;
       border-radius: 10px;
       padding: 15px 30px;
+
+      &:hover {
+        color: #e41623;
+        background-color: #ffffff;
+        border: 1px solid #e41623;
+      }
     }
   }
 }
 
 //products end
-
-/* pagination start */
-.pagination {
-  text-align: center;
-  margin-top: 30px;
-}
-
-/* pagination end */
 
 .footer {
   padding: 0px 20px;

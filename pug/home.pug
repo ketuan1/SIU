@@ -1,0 +1,227 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src="https://kit.fontawesome.com/36132d75ba.js" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+        title Home
+        link(rel="stylesheet" href="../../css/home.css")
+        link(rel="stylesheet" href="../../dist/output.css")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet")
+    body 
+    .heading 
+        input.heading__search--input(type="text" placeholder="Search...")
+        i.fa-solid.fa-magnifying-glass.icon-search
+        span.heading__language--title
+            i.fa-solid.fa-caret-down.icon__language
+
+.box-nav
+  nav.bg-white.border-gray-200.px-2.rounded.container.mx-auto(class='sm:px-4 py-2.5 dark:bg-gray-900')
+    .container.flex.flex-wrap.items-center.justify-between.mx-auto
+      a.flex.items-center(href='../../home.html')
+        img.h-6.mr-3(src='../../images/SIU LOGO - COLOR 1.png' class='sm:h-9' alt='Logo')
+      button.inline-flex.items-center.p-2.ml-3.text-sm.text-gray-500.rounded-lg(data-collapse-toggle='navbar-default' type='button' class='md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600' aria-controls='navbar-default' aria-expanded='false')
+        span.sr-only Open main menu
+        svg.w-6.h-6(aria-hidden='true' fill='currentColor' viewbox='0 0 20 20' xmlns='')
+          path(fill-rule='evenodd' d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd')
+      #navbar-default.hidden.w-full(class='md:block md:w-auto')
+        ul.flex.flex-col.p-4.mt-4.border.border-gray-100.rounded-lg.bg-gray-50(class='md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700')
+          li
+            a.block.py-2.pl-3.pr-4.text-red-700.rounded(href='#' class='md:bg-transparent md:text-red-700 md:p-0 dark:text-white' aria-current='page')
+              i.fa-solid.fa-house.icon-home
+          li
+            a.font-bold.text-base.leading-5.text-center.text-gray-800.block.py-2.pl-3.pr-4.rounded(href='../../about.html' class='md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
+              | ABOUT
+              | US
+          li
+            a.font-bold.text-base.leading-5.text-center.text-gray-800.block.py-2.pl-3.pr-4.rounded(href='../../product.html' class='md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent') PRODUCTS
+          li
+            a.font-bold.text-base.leading-5.text-center.text-gray-800.block.py-2.pl-3.pr-4.rounded(href='../../services.html' class='md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent') SERVICES
+          li
+            a.font-bold.text-base.leading-5.text-center.text-gray-800.block.py-2.pl-3.pr-4.rounded(href='../../manufacturing.html' class='md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent') MANUFACTURING
+          li
+            a.font-bold.text-base.leading-5.text-center.text-gray-800.block.py-2.pl-3.pr-4.rounded(href='../../new.html' class='md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent') NEWS
+          li
+            a.font-bold.text-base.leading-5.text-center.text-gray-800.block.py-2.pl-3.pr-4.rounded(href='../../contact.html' class='md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent')
+              | CONTACT
+              | US
+
+
+// slider start
+#indicators-carousel.relative(data-carousel='static')
+  // Carousel wrapper
+  .relative.h-56.overflow-hidden(class='md:h-96')
+    // Item 1
+    .hidden.duration-700.ease-in-out(data-carousel-item='active')
+      img.absolute.block.w-full(src='../../images/Rectangle 897.png' class='-translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' alt='...')
+      p.font-bold.text-3xl.leading-9.text-center.text-white.home__header--silder
+        | SIU INDUSTRY - Solving Tough Equipment Sealing Challenges Through Innovation
+    // Item 2
+    .hidden.duration-700.ease-in-out(data-carousel-item='')
+      img.absolute.block.w-full(src='../../images/Rectangle 898.png' class='-translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' alt='...')
+    // Item 3
+    .hidden.duration-700.ease-in-out(data-carousel-item='')
+      img.absolute.block.w-full(src='../../images/Rectangle 37.png' class='-translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' alt='...')
+    // Item 4
+    .hidden.duration-700.ease-in-out(data-carousel-item='')
+      img.absolute.block.w-full(src='../../images/Rectangle 32.8.png' class='-translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' alt='...')
+    // Item 5
+    .hidden.duration-700.ease-in-out(data-carousel-item='')
+      img.absolute.block.w-full(src='../../images/Rectangle 38.png' class='-translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' alt='...')
+  // Slider indicators
+  .absolute.z-30.flex.space-x-3.bottom-5(class='-translate-x-1/2 left-1/2')
+    button.w-3.h-3(type='button' aria-current='true' aria-label='Slide 1' data-carousel-slide-to='0')
+    button.w-3.h-3(type='button' aria-current='false' aria-label='Slide 2' data-carousel-slide-to='1')
+    button.w-3.h-3(type='button' aria-current='false' aria-label='Slide 3' data-carousel-slide-to='2')
+
+  //slier end
+
+//feature home start  
+
+.bg-white
+  .container.mx-auto
+    .grid.grid-cols-12.gap-2
+      div(class='sm:col-span-8 lg:col-span-4')
+        p.feature__vector | Welcome to SIU Industry
+        span.feature__header What do you looking for?
+      div(class='sm:col-span-4 lg:col-span-8')
+        .flex
+          .feature__icon
+            i.fa-solid.fa-toolbox
+            p.feature__icon--title Products
+          .feature__icon
+            i.fa-solid.fa-toolbox
+            p.feature__icon--title Services
+          .feature__icon
+            i.fa-solid.fa-toolbox
+            p.feature__icon--title QAL
+          .feature__icon
+            i.fa-solid.fa-toolbox
+            p.feature__icon--title Manufacturing
+
+//feature home end
+
+//slider category products start
+
+div.bg-gray-200.w-full.category
+  .container.mx-auto
+    h2.category__header Category Products 
+    .text-center.w-full 
+      .grid.grid-flow-row-dense.mt-5
+
+        .swiper.mySwiper
+          .swiper-wrapper
+            .swiper-slide.slider-mr
+              img(src='../../images/Rectangle 32.9.png' alt='')
+            .swiper-slide.slider-mr 
+              img(src='../../images/Rectangle 32.9.png' alt='')
+            .swiper-slide.slider-mr 
+              img(src='../../images/Rectangle 32.9.png' alt='')
+            .swiper-slide.slider-mr
+              img(src='../../images/Rectangle 32.9.png' alt='')
+            .swiper-slide.slider-mr
+              img(src='../../images/Rectangle 32.9.png' alt='')
+            .swiper-slide.slider-mr
+              img(src='../../images/Rectangle 32.9.png' alt='')
+            .swiper-slide.slider-mr
+              img(src='../../images/Rectangle 32.9.png' alt='')
+            .swiper-slide.slider-mr
+              img(src='../../images/Rectangle 32.9.png' alt='')
+            .swiper-slide.slider-mr
+              img(src='../../images/Rectangle 32.9.png' alt='')
+          .swiper-button-next
+          .swiper-button-prev
+
+
+//slider category products start
+
+
+//products home start
+
+.products 
+  h2.heading__products Products 
+  .grid.gap-5.grid-flow-row-dense.mt-10.pb-20.container.mx-auto
+
+     .swiper.mySwiper
+          .swiper-wrapper
+            .swiper-slide.slider-mr
+              
+                .products__content
+                  .products__new
+                    span.products__new--title NEW
+                  .products__img
+                    img.products__img--content(src='../../images/Rectangle 3.png' alt='')
+                  p.products__title Lubricants
+                  h2.products__header WIRE ROPE 455 ARAMID FIBER GASKET
+                  .products__btn
+                    button.products__btn--view VIEW MORE
+            .swiper-slide.slider-mr 
+              
+                .products__content
+                  .products__new
+                    span.products__new--title NEW
+                  .products__img
+                    img.products__img--content(src='../../images/Rectangle 3.png' alt='')
+                  p.products__title Lubricants
+                  h2.products__header WIRE ROPE 455 ARAMID FIBER GASKET
+                  .products__btn
+                    button.products__btn--view VIEW MORE
+            .swiper-slide.slider-mr 
+              
+                .products__content
+                  .products__new
+                    span.products__new--title NEW
+                  .products__img
+                    img.products__img--content(src='../../images/Rectangle 3.png' alt='')
+                  p.products__title Lubricants
+                  h2.products__header WIRE ROPE 455 ARAMID FIBER GASKET
+                  .products__btn
+                    button.products__btn--view VIEW MORE
+            .swiper-slide.slider-mr
+              
+                .products__content
+                  .products__new
+                    span.products__new--title NEW
+                  .products__img
+                    img.products__img--content(src='../../images/Rectangle 3.png' alt='')
+                  p.products__title Lubricants
+                  h2.products__header WIRE ROPE 455 ARAMID FIBER GASKET
+                  .products__btn
+                    button.products__btn--view VIEW MORE
+
+                    
+            .swiper-button-next
+            .swiper-button-prev
+
+
+
+//products home end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script(src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js")
+script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js")
+
+script.
+  var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  navigation: {
+  nextEl: ".swiper-button-next",
+  prevEl: ".swiper-button-prev",
+  },
+  });

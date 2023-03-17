@@ -12,19 +12,28 @@
     <title>Service Details</title>
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="../css/serviceDetails.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
 
-    <div class="heading">
-        <input class="heading__search--input" type="text" placeholder="Search...">
-        <i class="fa-solid fa-magnifying-glass icon-search"></i>
-        <span class="heading__language--title">EN
-          <i class="fa-solid fa-caret-down icon__language"></i>
-        </span>
-      </div>
-    
+    <div class="heading h-12 m-h-12">
+        <div class="container">
+            <div class="flex justify-end">
+                <form action="" class="border">
+                    <input class="heading__search--input text-white" type="text" placeholder="Search...">
+                    <button> <i class="fa-solid fa-magnifying-glass text-xl leading-5 text-white mr-2"></i></button>
+                </form>
+                <div class="text-white mt-auto mb-auto ml-2">
+                    <span class="font-bold text-sm leading-4 text-white">EN
+                        <i class="fa-solid fa-caret-down text-xs leading-3 text-gray-200"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 container mx-auto">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="./home.html" class="flex items-center">
@@ -45,35 +54,37 @@
                 <ul
                     class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#"
+                        <a href="./home.html"
                             class="block py-2 pl-3 pr-4  text-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 dark:text-white"
                             aria-current="page">
                             <i class="fa-solid fa-house icon-home"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT US</a>
+                        <a href="./about.html"
+                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT
+                            US</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./product.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PRODUCTS</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./services.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">SERVICES</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./manufacturing.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">MANUFACTURING</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="./new.html"
                             class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">NEWS</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT US</a>
+                        <a href="./contact.html"
+                            class="font-bold text-base leading-5 text-center text-gray-800 block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT
+                            US</a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +93,8 @@
 
     <div class="home-menu">
         <div class="container mx-auto">
-            <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-2 grid-flow-row-dense">
+            <div
+                class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-2 grid-flow-row-dense">
                 <div class="col-span-12">
                     <ul class="home__menu--item">
                         <li class="home__menu--list">
@@ -154,165 +166,296 @@
         <!--Related Services start  -->
         <div class="container mx-auto">
             <h3 class="service__related--title">Related Services</h3>
-            <div
-                class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row-dense mt-5">
-                <div class="col-span-2">
-                    <div class="flex service-main">
-                        <img class="service__related--img" src="../images/Rectangle 58.png" alt="">
-                        <div class="service__related">
-                            <h2 class="service__related--name">GEAR BOX REPAIR</h2>
-                            <p class="service__related--description">SIU have the necessary technically qualified
-                                manpower, readily available
-                                with extensive equipment resources to provide a quality, cost effective range of in-situ
-                                service that achieve desired results within acceptably short time frames.
-                            </p>
-                            <div class="test">
-                                <button class="button__service--view">View More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-2">
-                    <div class="flex service-main">
-                        <img class="service__related--img" src="../images/Rectangle 59.png" alt="">
-                        <div class="service__related">
-                            <h2 class="service__related--name">CYLINDER REPAIR</h2>
-                            <p class="service__related--description">SIU custom designs, manufactures, services and
-                                repairs fluid film babbitt bearings and seals to keep large
-                                rotating equipment operating more efficiently and reliably over an extended life.
-                            </p>
-                            <div class="button__service--related">
-                                <button class="button__service--view">View More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!--Related Services end  -->
-    </div>
-    <footer class="bg-black dark:bg-gray-900 ">
-        <div class="grid grid-cols-2 gap-2 px-6 py-8 md:grid-cols-4 container mx-auto">
-            <div>
-                <h2 class="mb-6 font-bold text-2xl leading-7 text-white">SIU INDUSTRY</h2>
-                <ul class="font-normal text-base leading-6 text-white">
-                    <li class="mb-4">
-                        <i class="fa-solid fa-location-dot font-light text-base leading-4 text-center text-white"></i>
-                        <a href="#">611 Ta Quang Buu St. Dist.8, Ho Chi Minh City , Viet Nam</a>
-                    </li>
-                    <li class="mb-4">
-                        <i class="fa-brands fa-firefox-browser font-light text-base leading-4 text-center text-white"></i>
-                        <a href="#"> www.siuindustry.com</a>
-                    </li>
-                    <li class="mb-4">
-                        <i class="fa-solid fa-envelope font-light text-base leading-4 text-center text-white"></i>
-                        <a href="#">  sales@siuindustry.com</a>
-                    </li>
-                    <li class="mb-4">
-                        <i class="fa-solid fa-phone font-light text-base leading-4 text-center text-white"></i>
-                        <a href="#"> 0918184800</a>
-                    </li>
-                    <div class="flex font-normal text-2xl leading-6 text-center text-white">
-                        <li class="mb-4 mr-5">
-                            <i class="fa-brands fa-facebook font-light text-base leading-4 text-center text-white"></i>
-                        </li>
-                        <li class="mb-4 mr-5">
-                            <i class="fa-brands fa-instagram font-light text-base leading-4 text-center text-white"></i>
+            <div class="relative">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex-row flex h-full">
+                                <div class="h-full w-full flex">
+                                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.1.png" alt="">
+                                </div>
+                                <div class=" flex flex-col bg-black w-full">
+                                    <div class="services-content">
+                                        <h2 class="services-title">ON LINE MACHINING</h2>
+                                        <p class="services-desc">SIU have the necessary technically qualified manpower,
+                                            readily
+                                            available with extensive equipment resources to provide a quality, cost
+                                            effective
+                                            range of in-situ service that achieve desired results within acceptably
+                                            short time
+                                            frames.
+                                        </p>
+                                        <div class="services-btn">
+                                            <a href="./serviceDeatlis.html"> <button class="button__service--view">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex-row flex h-full">
+                                <div class="h-full w-full flex">
+                                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.1.png" alt="">
+                                </div>
+                                <div class=" flex flex-col bg-black w-full">
+                                    <div class="services-content">
+                                        <h2 class="services-title">ON LINE MACHINING</h2>
+                                        <p class="services-desc">SIU have the necessary technically qualified manpower,
+                                            readily
+                                            available with extensive equipment resources to provide a quality, cost
+                                            effective
+                                            range of in-situ service that achieve desired results within acceptably
+                                            short time
+                                            frames.
+                                        </p>
+                                        <div class="services-btn">
+                                            <a href="./serviceDeatlis.html"> <button class="button__service--view">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex-row flex h-full">
+                                <div class="h-full w-full flex">
+                                    <img class="w-full h-full object-cover" src="../images/Rectangle 58.1.png" alt="">
+                                </div>
+                                <div class=" flex flex-col bg-black w-full">
+                                    <div class="services-content">
+                                        <h2 class="services-title">ON LINE MACHINING</h2>
+                                        <p class="services-desc">SIU have the necessary technically qualified manpower,
+                                            readily
+                                            available with extensive equipment resources to provide a quality, cost
+                                            effective
+                                            range of in-situ service that achieve desired results within acceptably
+                                            short time
+                                            frames.
+                                        </p>
+                                        <div class="services-btn">
+                                            <a href="./serviceDeatlis.html"> <button class="button__service--view">View
+                                                    More</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next btn-next"></div>
+                <div class="swiper-button-prev btn-prev"></div>
+            </div>
+
+            <!-- <div class="grid gap-5 sm:grid-cols-2 xl:gap-30px">
+                <div class="flex-row flex h-full">
+                    <div class="h-full w-full flex">
+                        <img class="w-full h-full object-cover" src="../images/Rectangle 58.1.png" alt="">
+                    </div>
+                    <div class=" flex flex-col bg-black w-full">
+                        <div class="services-content">
+                            <h2 class="services-title">ON LINE MACHINING</h2>
+                            <p class="services-desc">SIU have the necessary technically qualified manpower, readily
+                                available with extensive equipment resources to provide a quality, cost effective
+                                range of in-situ service that achieve desired results within acceptably short time
+                                frames.
+                            </p>
+                            <div class="services-btn">
+                                <a href="./serviceDeatlis.html"> <button class="button__service--view">View
+                                        More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-row flex h-full">
+                    <div class="h-full w-full flex">
+                        <img class="w-full h-full object-cover" src="../images/Rectangle 58.1.png" alt="">
+                    </div>
+                    <div class=" flex flex-col bg-black w-full">
+                        <div class="services-content">
+                            <h2 class="services-title">ON LINE MACHINING</h2>
+                            <p class="services-desc">SIU have the necessary technically qualified manpower, readily
+                                available with extensive equipment resources to provide a quality, cost effective
+                                range of in-situ service that achieve desired results within acceptably short time
+                                frames.
+                            </p>
+                            <div class="services-btn">
+                                <a href="./serviceDeatlis.html"> <button class="button__service--view">View
+                                        More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!--Related Services end  -->
+        </div>
+        <footer class="bg-black dark:bg-gray-900 mt-11">
+            <div class="grid grid-cols-2 gap-2 px-6 py-8 md:grid-cols-4 container mx-auto">
+                <div>
+                    <h2 class="mb-6 font-bold text-2xl leading-7 text-white">SIU INDUSTRY</h2>
+                    <ul class="font-normal text-base leading-6 text-white">
+                        <li class="mb-4">
+                            <i
+                                class="fa-solid fa-location-dot font-light text-base leading-4 text-center text-white"></i>
+                            <a href="#">611 Ta Quang Buu St. Dist.8, Ho Chi Minh City , Viet Nam</a>
                         </li>
                         <li class="mb-4">
-                            <i class="fa-brands fa-youtube font-light text-base leading-4 text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-firefox-browser font-light text-base leading-4 text-center text-white"></i>
+                            <a href="#"> www.siuindustry.com</a>
                         </li>
+                        <li class="mb-4">
+                            <i class="fa-solid fa-envelope font-light text-base leading-4 text-center text-white"></i>
+                            <a href="#"> sales@siuindustry.com</a>
+                        </li>
+                        <li class="mb-4">
+                            <i class="fa-solid fa-phone font-light text-base leading-4 text-center text-white"></i>
+                            <a href="#"> 0918184800</a>
+                        </li>
+                        <div class="flex font-normal text-2xl leading-6 text-center text-white">
+                            <li class="mb-4 mr-5">
+                                <i
+                                    class="fa-brands fa-facebook font-light text-base leading-4 text-center text-white"></i>
+                            </li>
+                            <li class="mb-4 mr-5">
+                                <i
+                                    class="fa-brands fa-instagram font-light text-base leading-4 text-center text-white"></i>
+                            </li>
+                            <li class="mb-4">
+                                <i
+                                    class="fa-brands fa-youtube font-light text-base leading-4 text-center text-white"></i>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 font-bold text-2xl leading-7 text-white">PRODUCTS</h2>
+                    <ul class="font-normal text-base leading-6 text-white list-disc footer">
+                        <li class="mb-4">
+                            <a href="#"> Gasket</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Packing</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">O RING</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Hydraulic Seals</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Chemicals</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Lubricants</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Fittings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="font-normal text-base leading-6 text-white list-disc footer">
+                        <li class="mb-4">
+                            <a href="#">Raw Materials​​​​</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Shims​​​​</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Injection Nozzles</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Blasting Machine</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">MRO Products​​​​</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Tools​​​​</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Valves</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 font-bold text-2xl leading-7 text-white">QUICK LINKS</h2>
+                    <ul class="font-normal text-base leading-6 text-white list-disc footer">
+                        <li class="mb-4">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Manufacturing</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">News</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- footer more  start-->
+        <div class="bg-red-600 h-full">
+            <div class="container mx-auto">
+                <div
+                    class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-flow-row-dense">
+                    <div class="col-span-1">
+                        <h3 class="font-normal text-white fmore">© 2022 SIU Industry. All Rights Reserved.</h3>
                     </div>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 font-bold text-2xl leading-7 text-white">PRODUCTS</h2>
-                <ul class="font-normal text-base leading-6 text-white list-disc footer">
-                    <li class="mb-4">
-                        <a href="#">    Gasket</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Packing</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">O RING</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Hydraulic Seals</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Chemicals</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Lubricants</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Fittings</a>
-                    </li>         
-                </ul>
-            </div>
-            <div>
-                <ul class="font-normal text-base leading-6 text-white list-disc footer">
-                    <li class="mb-4">
-                        <a href="#">Raw Materials​​​​</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Shims​​​​</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Injection Nozzles</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Blasting Machine</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">MRO Products​​​​</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Tools​​​​</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Valves</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 font-bold text-2xl leading-7 text-white">QUICK LINKS</h2>
-                <ul class="font-normal text-base leading-6 text-white list-disc footer">
-                    <li class="mb-4">
-                        <a href="#">About us</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Services</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Manufacturing</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">News</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#">Contact us</a>
-                    </li>
-                </ul>
+                    <div class="col-span-1">
+                        <h3 class="font-normal text-white fmore">Terms and Conditions . Privacy Policy . Sitemap</h3>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-      <!-- footer more  start-->
-<div class="bg-red-600 h-full">
-    <div class="container mx-auto">
-      <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-flow-row-dense">
-        <div class="col-span-1">
-          <h3 class="font-normal text-white fmore">© 2022 SIU Industry. All Rights Reserved.</h3>
-        </div>
-        <div class="col-span-1">
-          <h3 class="font-normal text-white fmore">Terms and Conditions  .  Privacy Policy  .  Sitemap</h3>
-        </div>
-      </div>
-    </div>
-    </div>
-    <!-- footer more  end-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+        <!-- footer more  end-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    480: {
+                        slidesPerView: 1,
+                        spaceBetween: 16,
+                        resistanceRatio: 0.85
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        resistanceRatio: 0.85
+                    },
+                    980: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        resistanceRatio: 0.85
+                    },
+                    1280: {
+                        slidesPerView: 2,
+                        spaceBetween: 24,
+                        resistanceRatio: 0
+                    }
+                }
+            });
+        </script>
 </body>
+
 </html>

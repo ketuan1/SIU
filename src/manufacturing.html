@@ -17,12 +17,20 @@
 
 <body>
 
-    <div class="heading">
-        <input class="heading__search--input" type="text" placeholder="Search...">
-        <i class="fa-solid fa-magnifying-glass icon-search"></i>
-        <span class="heading__language--title">EN
-          <i class="fa-solid fa-caret-down icon__language"></i>
-        </span>
+    <div class="heading h-12 m-h-12">
+        <div class="container">
+          <div class="flex justify-end">
+            <form action="" class="border">
+              <input class="heading__search--input text-white" type="text" placeholder="Search...">
+            <button>  <i class="fa-solid fa-magnifying-glass text-xl leading-5 text-white mr-2"></i></button>
+            </form>
+            <div class="text-white mt-auto mb-auto ml-2">
+              <span class="font-bold text-sm leading-4 text-white">EN
+                <i class="fa-solid fa-caret-down text-xs leading-3 text-gray-200"></i>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
 
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 container mx-auto">
@@ -48,7 +56,7 @@
                         <a href="./home.html"
                             class="block py-2 pl-3 pr-4  text-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 dark:text-white"
                             aria-current="page">
-                            <i class="fa-solid fa-house icon-home"></i>
+                            <i class="fa-solid fa-house ml-7"></i>
                         </a>
                     </li>
                     <li>
@@ -86,9 +94,9 @@
         <div class="container mx-auto">
             <div class="grid grid:cols-1 grid:cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-2 grid-flow-row-dense">
                 <div class="col-span-12">
-                    <ul class="home__menu--item">
+                    <ul class="flex">
                         <li class="home__menu--list">
-                            <i class="fa-solid fa-house"></i> <span class="home__menu--list-more">></span>
+                            <i class="fa-solid fa-house"></i> <span class="ml-2">></span>
                         </li>
                         <li class="home__menu--list">Manufacturing</li>
                     </ul>
@@ -104,8 +112,8 @@
             class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3 grid-flow-row-dense mt-5 pb-5">
             <div class="col-span-2">
                 <div class="manufacturing-content">
-                    <h2 class="manufacturing-header">Manufacturing</h2>
-                    <p class="manufacturing-description">Value and efficiency
+                    <h2 class="manufacturing-header font-bold mb-5">Manufacturing</h2>
+                    <p class="font-normal text-lg leading-6">Value and efficiency
                         are key drivers for manufacturing firms, and Chesterton
                         is well poised to meet those needs. Our highly-knowledgeable
                         engineers, specialists, and service teams are experienced
@@ -127,36 +135,38 @@
             <div
                 class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 grid-flow-row-dense mt-5">
                 <div class="col-span-1 mt-5">
-                    <div class="manufacturing__card">
+                    <div class="mt-10 h-full bg-white">
                         <div>
-                            <img class="manufacturing__img" src="../images/Rectangle 32.png" alt="">
+                            <img class="w-full h-full object-cover" src="../images/Rectangle 32.png" alt="">
                         </div>
 
-                        <div class="manufacturing__background">
-                            <h2 class="manufacturing__card--name">GASKETS</h2>
-                            <p class="manufacturing__card--content">SIU leads the way in high-efficiency solutions using
+                        <div class="bg-white px-[20px] py-[20px]">
+                            <h2 class="manufacturing__card--name font-bold text-lg leading-5 mb-4">GASKETS</h2>
+                            <p class="manufacturing__card--content font-normal text-sm leading-4 mb-4">SIU leads the way in high-efficiency solutions using
                                 the latest technologies for maximum sealing performance.
                             </p>
                             <div class="view__title">
-                                <span class="view__more--new">VIEW MORE
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                                <a href="./manufacturingDetails.html">
+                                    <span class="view__more--new font-bold text-sm leading-4">VIEW MORE
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-span-1 mt-5">
-                    <div class="manufacturing__card">
+                    <div class="mt-10 h-full bg-white">
                         <div>
                             <img class="manufacturing__img" src="../images/Rectangle 33.png" alt="">
                         </div>
-                        <div class="manufacturing__background">
-                            <h2 class="manufacturing__card--name">O RINGS</h2>
-                            <p class="manufacturing__card--content">Chesterton leads the way in high-efficiency
+                        <div class="bg-white px-[20px] py-[20px]">
+                            <h2 class="manufacturing__card--name font-bold text-lg leading-5 mb-4">O RINGS</h2>
+                            <p class="manufacturing__card--content font-normal text-sm leading-4 mb-4">Chesterton leads the way in high-efficiency
                                 solutions using the latest technologies for maximum sealing performance.
                             </p>
                             <div class="view__title">
-                                <span class="view__more--new">VIEW MORE
+                                <span class="view__more--new font-bold text-sm leading-4">VIEW MORE
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </span>
                             </div>
@@ -164,17 +174,17 @@
                     </div>
                 </div>
                 <div class="col-span-1 mt-5">
-                    <div class="manufacturing__card">
+                    <div class="mt-10 h-full bg-white">
                         <div>
                             <img class="manufacturing__img" src="../images/Rectangle 34.png" alt="">
                         </div>
-                        <div class="manufacturing__background">
-                            <h2 class="manufacturing__card--name">SHIMS</h2>
-                            <p class="manufacturing__card--content">Chesterton leads the way in high-efficiency
+                        <div class="bg-white px-[20px] py-[20px]">
+                            <h2 class="manufacturing__card--name font-bold text-lg leading-5 mb-4">SHIMS</h2>
+                            <p class="manufacturing__card--content font-normal text-sm leading-4 mb-4">Chesterton leads the way in high-efficiency
                                 solutions using the latest technologies for maximum sealing performance.​​​​
                             </p>
                             <div class="view__title">
-                                <span class="view__more--new">VIEW MORE
+                                <span class="view__more--new font-bold text-sm leading-4">VIEW MORE
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </span>
                             </div>
@@ -183,17 +193,17 @@
                 </div>
 
                 <div class="col-span-1 mt-5">
-                    <div class="manufacturing__card">
+                    <div class="mt-10 h-full bg-white">
                         <div>
                             <img class="manufacturing__img" src="../images/Rectangle 35.png" alt="">
                         </div>
-                        <div class="manufacturing__background">
-                            <h2 class="manufacturing__card--name">GASKETS</h2>
-                            <p class="manufacturing__card--content">SIU leads the way in high-efficiency solutions using
+                        <div class="bg-white px-[20px] py-[20px]">
+                            <h2 class="manufacturing__card--name font-bold text-lg leading-5 mb-4">GASKETS</h2>
+                            <p class="manufacturing__card--content font-normal text-sm leading-4 mb-4">SIU leads the way in high-efficiency solutions using
                                 the latest technologies for maximum sealing performance.
                             </p>
                             <div class="view__title">
-                                <span class="view__more--new">VIEW MORE
+                                <span class="view__more--new font-bold text-sm leading-4">VIEW MORE
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </span>
                             </div>
@@ -206,18 +216,18 @@
             <div
                 class="grid grid:cols-1 grid:cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 grid-flow-row-dense mt-5">
                 <div class="col-span-1">
-                    <div class="manufacturing__card">
+                    <div class="mt-10 h-full bg-white">
                         <div>
                             <img class="manufacturing__img" src="../images/Rectangle 36.png" alt="">
                         </div>
 
-                        <div class="manufacturing__background">
-                            <h2 class="manufacturing__card--name">GASKETS</h2>
-                            <p class="manufacturing__card--content">SIU leads the way in high-efficiency solutions using
+                        <div class="bg-white px-[20px] py-[20px]">
+                            <h2 class="manufacturing__card--name font-bold text-lg leading-5 mb-4">GASKETS</h2>
+                            <p class="manufacturing__card--content font-normal text-sm leading-4 mb-4">SIU leads the way in high-efficiency solutions using
                                 the latest technologies for maximum sealing performance.
                             </p>
                             <div class="view__title">
-                                <span class="view__more--new">VIEW MORE
+                                <span class="view__more--new font-bold text-sm leading-4">VIEW MORE
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </span>
                             </div>
@@ -225,17 +235,17 @@
                     </div>
                 </div>
                 <div class="col-span-1">
-                    <div class="manufacturing__card">
+                    <div class="mt-10 h-full bg-white">
                         <div>
                             <img class="manufacturing__img" src="../images/Rectangle 37.png" alt="">
                         </div>
-                        <div class="manufacturing__background">
-                            <h2 class="manufacturing__card--name">O RINGS</h2>
-                            <p class="manufacturing__card--content">Chesterton leads the way in high-efficiency
+                        <div class="bg-white px-[20px] py-[20px]">
+                            <h2 class="manufacturing__card--name font-bold text-lg leading-5 mb-4">O RINGS</h2>
+                            <p class="manufacturing__card--content font-normal text-sm leading-4 mb-4">Chesterton leads the way in high-efficiency
                                 solutions using the latest technologies for maximum sealing performance.
                             </p>
                             <div class="view__title">
-                                <span class="view__more--new">VIEW MORE
+                                <span class="view__more--new font-bold text-sm leading-4">VIEW MORE
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </span>
                             </div>
@@ -243,17 +253,17 @@
                     </div>
                 </div>
                 <div class="col-span-1">
-                    <div class="manufacturing__card">
+                    <div class="mt-10 h-full bg-white">
                         <div>
                             <img class="manufacturing__img" src="../images/Rectangle 38.png" alt="">
                         </div>
-                        <div class="manufacturing__background">
-                            <h2 class="manufacturing__card--name">SHIMS</h2>
-                            <p class="manufacturing__card--content">Chesterton leads the way in high-efficiency
+                        <div class="bg-white px-[20px] py-[20px]">
+                            <h2 class="manufacturing__card--name font-bold text-lg leading-5 mb-4">SHIMS</h2>
+                            <p class="manufacturing__card--content font-normal text-sm leading-4 mb-4">Chesterton leads the way in high-efficiency
                                 solutions using the latest technologies for maximum sealing performance.​​​​
                             </p>
                             <div class="view__title">
-                                <span class="view__more--new">VIEW MORE
+                                <span class="view__more--new font-bold text-sm leading-4">VIEW MORE
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </span>
                             </div>
@@ -262,18 +272,18 @@
                 </div>
 
                 <div class="col-span-1">
-                    <div class="manufacturing__card">
+                    <div class="mt-10 h-full bg-white">
                         <div>
                             <img class="manufacturing__img" src="../images/Rectangle 39.png" alt="">
                         </div>
-                        <div class="manufacturing__background">
-                            <h2 class="manufacturing__card--name">GASKETS</h2>
-                            <p class="manufacturing__card--content">SIU leads the way in high-efficiency solutions using
+                        <div class="bg-white px-[20px] py-[20px]">
+                            <h2 class="manufacturing__card--name font-bold text-lg leading-5 mb-4">GASKETS</h2>
+                            <p class="manufacturing__card--content font-normal text-sm leading-4 mb-4">SIU leads the way in high-efficiency solutions using
                                 the latest technologies for maximum sealing performance.
                             </p>
                             <div class="view__title">
-                                <span class="view__more--new">VIEW MORE
-                                    <i class="fa-solid fa-arrow-right"></i>
+                                <span class="view__more--new font-bold text-sm leading-4">VIEW MORE
+                                    <i class="fa-solid fa-arrow-right leading-4 ml-1"></i>
                                 </span>
                             </div>
                         </div>
@@ -281,9 +291,9 @@
                 </div>
             </div>
         </div>
-        <div class="manufacturing__button">
-            <button class="view__button">View More
-                <i class="fa-solid fa-angle-down"></i>
+        <div class="text-center">
+            <button class="view__button mt-16 font-bold text-sm leading-4 text-center mb-12">View More
+                <i class="fa-solid fa-angle-down text-lg ml-2"></i>
             </button>
         </div>
     </div>
@@ -326,9 +336,9 @@
                     </div>
                     <div>
                         <h2 class="mb-6 font-bold text-2xl leading-7 text-white">PRODUCTS</h2>
-                        <ul class="font-normal text-base leading-6 text-white list-disc footer">
+                        <ul class="font-normal text-base leading-6 text-white list-disc px-[20px] py-[0px]">
                             <li class="mb-4">
-                                <a href="#">    Gasket</a>
+                                <a href="#"> Gasket</a>
                             </li>
                             <li class="mb-4">
                                 <a href="#">Packing</a>
